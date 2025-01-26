@@ -1,2 +1,2 @@
 # Bock-Data-Science-Portfolio
-Assignments and Projects created in data science course
+Showcasing the assignments and projects created in a data science course.
