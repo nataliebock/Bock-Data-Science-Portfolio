@@ -1,6 +1,8 @@
 import streamlit as st
 
 import pandas as pd
+#Instructions: streamlit run basic_streamlit_app/main.py 
+
 penguins = pd.read_csv("Data/penguins.csv")
 
 st.title("Penguins App")
