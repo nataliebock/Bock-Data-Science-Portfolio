@@ -68,7 +68,36 @@ column = st.selectbox("Choose a column to fill", df.select_dtypes(include = ["nu
 st.dataframe(df[column])
 
 method = st.radio("Choose a method:", 
-         ["Original DF", "Drop Rows" , "Drop Columns" , "Impute Mean" , "Impute Median", "Impute Zero"])
+         ["Original DF", "Drop Rows" , "Drop Columns (>50% Missing)" , "Impute Mean" , "Impute Median", "Impute Zero"])
+
+#Copy original dataframe
+##df is going to remain untouched
+##df_clean is going to be imputation/ deletion df 
+df_clean = df.copy()
+
+if method == "Original DF":
+    pass #pass just skips through conditional statement so just shows original df with no changes 
+elif method == "Drop Rows":
+    df_clean = df_clean.dropna(subset = [column]) #to just drop rows with missing value in selected column 
+elif method == "Drop Columns (>50% Missing)":
+    df_clean = df_clean.drop(columns = df_clean.columns[df_clean.isnull().mean() > .5])
+elif method == "Impute Mean":
+    df_clean = df_clean[column].fillna(df[column].sum())
+elif method == "Impute Median":
+    df_clean[column] = df_clean[column].fillna(df[column].median())
+elif method == "Impute Zero":
+    df_clean[column] = df_clean[column].fillna(0)
+
+st.subheader("Cleaned Data Distribution")
+fig, ax = plt.subplots() #like creating a blank canvas
+sns.histplot(df_clean[column], kde = True)
+st.pyplot(fig)
+
+
+
+
+#st.dataframe(df_clean)
+st.write(df_clean.describe())
 
 # ------------------------------------------------------------------------------
 # Compare Data Distributions: Original vs. Cleaned
