@@ -39,6 +39,10 @@ This dataset contains information about the 2008 Summer Olympics.
 [Data Cleaning Reference Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
 
 ## 📷 Visuals 
-Below, I have included 3 visualizations made for this project, as well as a brief explanation and analysis of what is being depicted. 
+Below, I have included 2 visualizations made for this project, as well as a brief explanation and analysis of what is being depicted. To visualize the data, I divided the events into three categories: land events with no ball, land events with a ball, and water events. Below, are the visualizations created for the water events.   
 ![Image 3-17-25 at 3 19 PM](https://github.com/user-attachments/assets/48a94d57-9fc6-4e52-b74c-97a6ca934bf8)
+- The bar chart helps show that not all medal winners are included in this data set. For example, the modern pentathlon is missing one bronze medalist. This is important to remember when drawing conclusions from this data set. 
+- As shown, the most medals were given out for the rowing and swimming events, while the fewest medals were given for the triathlon and the modern pentathlon.
+- Why so many: In 2008, there were 14 rowing events, all of which consisted of teams. There were also 34 swimming events, some of which are relays and therefore contain more than one competitor. This helps to explain why so many of each type of medal were given out in these events.
+- Why so few: The triathlon and modern pentathlon both only have two events, one for men and one for women, explaining why so few medals are given out in these events. 
 
