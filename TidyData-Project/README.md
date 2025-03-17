@@ -1,12 +1,3 @@
-3. Create a README for the Tidy Data Project Repository
-Content Suggestions:
-
-Instructions: Include step-by-step instructions on how to run the notebook, along with dependencies (e.g., pandas, matplotlib, etc.).
-Dataset Description: Outline the source of your data and any pre-processing steps.
-References: Provide links to the cheat sheet and tidy data paper for further reading.
-Visual Examples: Consider adding screenshots of your visualizations or code snippets.
-
-
 # Tidy Data Project 
 ## Project Overview: 
 - The goal of this project was to clean an untidy dataset using the principles of tidy data and then begin to analyze the cleaned data.
