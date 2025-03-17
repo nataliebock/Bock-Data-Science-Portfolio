@@ -48,7 +48,7 @@ Below, I have included 2 visualizations made for this project, as well as a brie
 - **Why so few:** The triathlon and modern pentathlon both only have two events, one for men and one for women, explaining why so few medals are given out in these events.
 
 ### This visualization shows the number and gender of athletes competing in each water-based event in the 2008 Summer Olympics.
-<img width="1070" alt="Screenshot 2025-03-17 at 3 40 29 PM" src="https://github.com/user-attachments/assets/4d9dfe7b-58dd-40bb-9df8-ab499ac94fce" />
+![Image 3-17-25 at 3 42 PM](https://github.com/user-attachments/assets/5b6d6f52-a3f6-45f7-a85f-0887dde209ae)
 
 
 ## ℹ️ References 
