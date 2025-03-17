@@ -34,11 +34,12 @@ import matplotlib.pyplot as plt
 
 ## 📕Dataset Description 
 This dataset contains information about the 2008 Summer Olympics.
-- After cleaning, the variables included are the names of the competitor, their gender, the event they competed in, and the type of medal they won – if they did win a medal.
-- The data comes from a dataset by Giorgio Comai (OBCT/CCI) for EDJNet, linked below. In the original data, country is also included as a variable, as well as a medal count per person. In this case, these variables were not included, showing that the main objective here is whether or not someone won a medal, and what type of medal, rather than how many they have won over time.
+- After cleaning, the variables included are the names of the competitor, their gender, the event they competed in, and the type of medal they won.
+- The data comes from a dataset by Giorgio Comai (OBCT/CCI) for EDJNet, linked below. In the original data, country is also included as a variable, as well as a medal count per person. In this case, these variables were not included, showing that the main objective here is what type of medal was won and in what event in 2008, rather than how many they have won over time.
 
 ## 📷 Visuals 
-Below, I have included 2 visualizations made for this project, as well as a brief explanation and analysis of what is being depicted. To visualize the data, I divided the events into three categories: land events with no ball, land events with a ball, and water events. Below, are the visualizations created for the water events.   
+Below, I have included 2 visualizations made for this project, as well as a brief explanation and analysis of what is being depicted. To visualize the data, I divided the events into three categories: land events with no ball, land events with a ball, and water events. Below, are the visualizations created for the water events.  
+
 ### This visualziation shows the number and type of medals won in each water-based event in the 2008 Summer Olympics.
 ![Image 3-17-25 at 3 19 PM](https://github.com/user-attachments/assets/48a94d57-9fc6-4e52-b74c-97a6ca934bf8)
 - On the y-axis, the included events are listed, and the x-axis shows the number of medals won. The colors show the type of medal won, intuitively represented by colors similar to the medals (Silver is represented by grey, gold is represnted by yellow, and bronze is represented by red).
