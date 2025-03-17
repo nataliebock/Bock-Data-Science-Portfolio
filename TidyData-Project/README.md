@@ -5,15 +5,15 @@
 - **Skills:** Python, Pandas, Numpy, Seaborn, data cleaning, data visualization, aggregation. 
 
 ### 🧹Tidy Data  
-- **What does it mean to "tidy data":** In Hadley Wickham's work entitled "Tidy Data," she writes that "structuring datasets to facilitate manipulation, visualisation and modelling" (20). By tidying, the dataset is prepared for use and analysis through coding.
+- **What does it mean to "tidy data":** In Hadley Wickham's work entitled "Tidy Data," she writes that "structuring datasets to facilitate manipulation, visualization and modeling" (20). By tidying, the dataset is prepared for use and analysis through coding.
 - **The principles include:** Every observation is in its own row, every variable has its own column with only one variable per column, and that each observational unit forms its own table.
 - **Why these principles are important:** As written by Hadley Wickham, "This framework makes it easy to tidy messy datasets because only a small set of tools are needed to deal with a wide range of un-tidy datasets." Therefore, while the principles may be challenging to grasp at first, understanding the principles makes tidying data with the appropriate tools much easier! 
-- **Why tidy data is important:** Tidying data creates a universal structure that makes it easy for other people to use and analyze the same dataset. Tidy data is important in coding because many tools will assume the dataset is tidy, and therefore for accurate analysis to be created, the dataset much match the expectations of the coding tools.
+- **Why tidy data is important:** Tidying data creates a universal structure that makes it easy for other people to use and analyze the same dataset. Tidy data is important in coding because many tools will assume the dataset is tidy, and therefore for accurate analysis to be created, the dataset must match the expectations of the coding tools.
   
 ## 📖 Instructions 
 My script was written using Google Colaboratory, a simple platform for coding in Python that can be attached to your Google Drive. The instructions provided below describe how to run the code using this platform. 
 
-**1.** Add the dataset into your Google Drive.
+**1.** Add the dataset to your Google Drive.
 
 **2.** "Mount" your Drive in the Google Colab script: This is done by clicking the folder icon on the left hand side of the opened Google Colab project, and then clicking the folder with the Google Drive icon located below the title "Files."
 
@@ -41,19 +41,19 @@ import matplotlib.pyplot as plt
 ## 📷 Visuals 
 Below, I have included 2 visualizations made for this project, as well as a brief explanation and analysis of what is being depicted. To visualize the data, I divided the events into three categories: land events with no ball, land events with a ball, and water events. Below, are the visualizations created for the water events.  
 
-### This visualziation shows the number and type of medals won in each water-based event in the 2008 Summer Olympics.
+### This visualization shows the number and type of medals won in each water-based event in the 2008 Summer Olympics.
 ![Image 3-17-25 at 3 19 PM](https://github.com/user-attachments/assets/48a94d57-9fc6-4e52-b74c-97a6ca934bf8)
-- On the y-axis, the included events are listed, and the x-axis shows the number of medals won. The colors show the type of medal won, intuitively represented by colors similar to the medals (Silver is represented by grey, gold is represnted by yellow, and bronze is represented by red).
+- On the y-axis, the included events are listed, and the x-axis shows the number of medals won. The colors show the type of medal won, intuitively represented by colors similar to the medals (Silver is represented by grey, gold is represented by yellow, and bronze is represented by red).
 - The bar chart helps show that not all medal winners are included in this data set. For example, the modern pentathlon is missing one bronze medalist. This is important to remember when drawing conclusions from this data set. 
 - As shown, the most medals were given out for the rowing and swimming events, while the fewest medals were given for the triathlon and the modern pentathlon.
-- **Why so many:** In 2008, there were 14 rowing events, all of which consisted of teams. There were also 34 swimming events, some of which are relays and therefore contain more than one competitor. This helps to explain why so many of each type of medal were given out in these events.
+- **Why so many:** In 2008, there were 14 rowing events, all of which consisted of teams. There were also 34 swimming events, some of which are relays and therefore contain more than one competitor. This helps to explain why so many of each type of medal was given out in these events.
 - **Why so few:** The triathlon and modern pentathlon both only have two events, one for men and one for women, explaining why so few medals are given out in these events.
 
 ### This visualization shows the number and gender of athletes competing in each water-based event in the 2008 Summer Olympics.
 ![Image 3-17-25 at 3 42 PM](https://github.com/user-attachments/assets/5b6d6f52-a3f6-45f7-a85f-0887dde209ae)
-- On the y-axis, the included events are shown. The axis show the count of the number of male and female athletes in each event that are included in this dataset. The colors represent gender, with blue showing the male athletes and pink showing the female athletes.
-- As depicted, there are only synchronized swimming events for women. There are more substantially more male medalists than female medalists in rowing and canoeing and kayaking.
-- The event with the most male medialists is rowing, while the event with the most female medalists is swimming.
+- On the y-axis, the included events are shown. The axis shows the count of the number of male and female athletes in each event that is included in this dataset. The colors represent gender, with blue showing the male athletes and pink showing the female athletes.
+- As depicted, there are only synchronized swimming events for women. There are substantially more male medalists than female medalists in rowing, and canoeing and kayaking.
+- The event with the most male medalists is rowing, while the event with the most female medalists is swimming.
 
 #### If you are interested in viewing the bar charts for the other subsets of the events, follow the previous instructions to load the code and view the visualizations. 
   
