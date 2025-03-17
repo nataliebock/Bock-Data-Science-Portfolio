@@ -47,6 +47,10 @@ Below, I have included 2 visualizations made for this project, as well as a brie
 - **Why so many:** In 2008, there were 14 rowing events, all of which consisted of teams. There were also 34 swimming events, some of which are relays and therefore contain more than one competitor. This helps to explain why so many of each type of medal were given out in these events.
 - **Why so few:** The triathlon and modern pentathlon both only have two events, one for men and one for women, explaining why so few medals are given out in these events.
 
+### This visualization shows the number and gender of athletes competing in each water-based event in the 2008 Summer Olympics.
+<img width="1070" alt="Screenshot 2025-03-17 at 3 40 29 PM" src="https://github.com/user-attachments/assets/4d9dfe7b-58dd-40bb-9df8-ab499ac94fce" />
+
+
 ## ℹ️ References 
 [Data Source](https://edjnet.github.io/OlympicsGoNUTS/2008/)
 
