@@ -13,5 +13,6 @@ This portfolio showcases the assignments and projects created in a data science 
 - This project uses the principles of tidy data to clean a dataset containing information about the 2008 Summer Olympics.
 - The cleaned data is then used for analysis and visualizations.
 - To learn more about the tidy data principles and view the project, click the link above or open the TidyData-Project folder within this repository!
+- This project complements my coding portfolio by showcasing how I can apply the principles of tidy data to clean a messy dataset and prepare it for analysis. The project also showcases some visualizations, demonstrating how visualizing data is an important part of understanding and evaluating information. 
   
 ## Models
