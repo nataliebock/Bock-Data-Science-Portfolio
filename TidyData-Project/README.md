@@ -44,15 +44,21 @@ Below, I have included 2 visualizations made for this project, as well as a brie
 ### This visualization shows the number and type of medals won in each water-based event category in the 2008 Summer Olympics.
 <img width="1028" alt="Screenshot 2025-03-17 at 7 30 33 PM" src="https://github.com/user-attachments/assets/85566922-2f7f-419e-9b04-86d030991cd8" />
 - On the y-axis, the included events are listed, and the x-axis shows the number of medals won. The colors show the type of medal won, intuitively represented by colors similar to the medals (Silver is represented by grey, gold is represented by yellow, and bronze is represented by red).
-- The bar chart helps show that not all medal winners are included in this data set. For example, the modern pentathlon is missing one bronze medalist. This is important to remember when drawing conclusions from this data set. 
+  
+- The bar chart helps show that not all medal winners are included in this data set. For example, the modern pentathlon is missing one bronze medalist. This is important to remember when drawing conclusions from this data set.
+  
 - As shown, the most medals were given out for the rowing and swimming events, while the fewest medals were given for the triathlon and the modern pentathlon.
+  
 - **Why so many:** In 2008, there were 14 rowing events, all of which consisted of teams. There were also 34 swimming events, some of which are relays and therefore contain more than one competitor. This helps to explain why so many of each type of medal was given out in these events.
+  
 - **Why so few:** The triathlon and modern pentathlon both only have two events, one for men and one for women, explaining why so few medals are given out in these events.
 
 ### This visualization shows the number and gender of athletes competing in each water-based event in the 2008 Summer Olympics.
 ![Image 3-17-25 at 7 30 PM](https://github.com/user-attachments/assets/443223f9-3e42-4264-b1d6-a4c553652e9f)
 - On the y-axis, the included events are shown. The axis shows the count of the number of male and female athletes in each event that is included in this dataset. The colors represent gender, with blue showing the male athletes and pink showing the female athletes.
+  
 - As depicted, there are only synchronized swimming events for women. There are substantially more male medalists than female medalists in rowing, and canoeing and kayaking.
+  
 - The event with the most male medalists is rowing, while the event with the most female medalists is swimming.
 
 #### If you are interested in viewing the bar charts for the other subsets of the events, follow the previous instructions to load the code and view the visualizations. 
