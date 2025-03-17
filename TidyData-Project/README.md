@@ -11,6 +11,7 @@
   
 ## 📖 Instructions 
 My script was written using Google Colaboratory, a simple platform for coding in Python that can be attached to your Google Drive. The instructions provided below describe how to run the code using this platform. 
+
 **1.** Add the dataset into your Google Drive.
 **2.** "Mount" your Drive in the Google Colab script: This is done by clicking the folder icon on the left hand side of the opened Google Colab project, and then clicking the folder with the Google Drive icon located below the title "Files."
 **3.** Load the dataset: Copy the dataset's path and assign it to a name in your code. It should look like this, but with your specific path to the dataset:
