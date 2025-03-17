@@ -2,7 +2,7 @@
 ## 🧑‍🏫Project Overview  
 - The goal of this project was to clean an untidy dataset using the principles of tidy data and then begin to analyze the cleaned data.
 - For this project, I tidied and used a dataset on the 2008 Summer Olympics. The source where the untidy data was adapted from is linked below under References.
-- **Skills:** Python, Pandas, Numpy, Seaborn, data cleaning, data visualization, aggregation. 
+- **Skills:** Python, Pandas, Numpy, Seaborn, data cleaning, and data visualization.
 
 ### 🧹Tidy Data  
 - **What does it mean to "tidy data":** In Hadley Wickham's work entitled "Tidy Data," she writes that tidying data is "structuring datasets to facilitate manipulation, visualization and modeling" (20). By tidying, the dataset is prepared for effective use and analysis in coding.
