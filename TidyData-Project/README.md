@@ -24,6 +24,7 @@ My script was written using Google Colaboratory, a simple platform for coding in
 import pandas as pd
 import seaborn as sns
 import numpy as np
+import matplotlib.pyplot as plt
 ````
 6. Once these steps are followed, simply click "Runtime," and then "Run All" to run the code.
 
@@ -38,3 +39,5 @@ This dataset contains information about the 2008 Summer Olympics.
 [Data Cleaning Reference Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
 
 ## 📷 Visuals 
+Below, I have included 3 visualizations made for this project, as well as a brief explanation and analysis of what is being depicted. 
+![alt text](https://drive.google.com/file/d/1RV8BAH19djUhOtAQgUrbJlkjohMye6NY/view?usp=share_link)
