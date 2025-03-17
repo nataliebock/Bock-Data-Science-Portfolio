@@ -1,7 +1,8 @@
 # Tidy Data Project 
 ## 🧑‍🏫Project Overview  
 - The goal of this project was to clean an untidy dataset using the principles of tidy data and then begin to analyze the cleaned data.
-- For this project, I tidied and used a dataset on the 2008 Summer Olympics. The source where the untidy data was adapted from is linked below under References. 
+- For this project, I tidied and used a dataset on the 2008 Summer Olympics. The source where the untidy data was adapted from is linked below under References.
+- **Skills:** Python, Pandas, Numpy, Seaborn, data cleaning, data visualization, aggregation. 
 
 ### 🧹Tidy Data  
 - **What does it mean to "tidy data":** In Hadley Wickham's work entitled "Tidy Data," she writes that "structuring datasets to facilitate manipulation, visualisation and modelling" (20). By tidying, the dataset is prepared for use and analysis through coding.
@@ -33,7 +34,7 @@ import matplotlib.pyplot as plt
 **6.** Once these steps are followed, simply click "Runtime," and then "Run All" to run the code.
 
 ## 📕Dataset Description 
-This dataset contains information about the 2008 Summer Olympics.
+- This dataset contains information about 1875 medal winners at the 2008 Summer Olympics.
 - After cleaning, the variables included are the names of the competitor, their gender, the event they competed in, and the type of medal they won.
 - The data comes from a dataset by Giorgio Comai (OBCT/CCI) for EDJNet, linked below. In the original data, country is also included as a variable, as well as a medal count per person. In this case, these variables were not included, showing that the main objective here is what type of medal was won and in what event in 2008, rather than how many they have won over time.
 
