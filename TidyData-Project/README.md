@@ -40,7 +40,9 @@ This dataset contains information about the 2008 Summer Olympics.
 
 ## 📷 Visuals 
 Below, I have included 2 visualizations made for this project, as well as a brief explanation and analysis of what is being depicted. To visualize the data, I divided the events into three categories: land events with no ball, land events with a ball, and water events. Below, are the visualizations created for the water events.   
+### This visualziation shows the number and type of medals won in each water-based event in the 2008 Summer Olympics.
 ![Image 3-17-25 at 3 19 PM](https://github.com/user-attachments/assets/48a94d57-9fc6-4e52-b74c-97a6ca934bf8)
+- On the y-axis, the included events are listed, and the x-axis shows the number of medals won. The colors show the type of medal won, intuitively represented by colors similar to the medals (Silver is represented by grey, gold is represnted by yellow, and bronze is represented by red).
 - The bar chart helps show that not all medal winners are included in this data set. For example, the modern pentathlon is missing one bronze medalist. This is important to remember when drawing conclusions from this data set. 
 - As shown, the most medals were given out for the rowing and swimming events, while the fewest medals were given for the triathlon and the modern pentathlon.
 - Why so many: In 2008, there were 14 rowing events, all of which consisted of teams. There were also 34 swimming events, some of which are relays and therefore contain more than one competitor. This helps to explain why so many of each type of medal were given out in these events.
