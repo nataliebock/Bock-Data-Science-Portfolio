@@ -40,4 +40,5 @@ This dataset contains information about the 2008 Summer Olympics.
 
 ## 📷 Visuals 
 Below, I have included 3 visualizations made for this project, as well as a brief explanation and analysis of what is being depicted. 
-![alt text](https://drive.google.com/file/d/1RV8BAH19djUhOtAQgUrbJlkjohMye6NY/view?usp=share_link)
+![Image 3-17-25 at 3 19 PM](https://github.com/user-attachments/assets/48a94d57-9fc6-4e52-b74c-97a6ca934bf8)
+
