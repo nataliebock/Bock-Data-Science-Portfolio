@@ -24,10 +24,8 @@ My script was written using Google Colaboratory, a simple platform for coding in
 2. "Mount" your Drive in the Google Colab script: This is done by clicking the folder icon on the left hand side of the opened Google Colab project, and then clicking the folder with the Google Drive icon located below the title "Files."
 3. Load the dataset: Copy the dataset's path and assign it to a name in your code. It should look like this:
    ```
-function test() {
   medal = '/content/drive/MyDrive/Intro to Data Science/olympics_08_medalists.csv'
   medal = pd.read_csv(medal);
-}
 ```
 ## Dataset Description: 
 
