@@ -11,22 +11,22 @@
   
 ## 📖 Instructions 
 My script was written using Google Colaboratory, a simple platform for coding in Python that can be attached to your Google Drive. The instructions provided below describe how to run the code using this platform. 
-1. Add the dataset into your Google Drive.
-2. "Mount" your Drive in the Google Colab script: This is done by clicking the folder icon on the left hand side of the opened Google Colab project, and then clicking the folder with the Google Drive icon located below the title "Files."
-3. Load the dataset: Copy the dataset's path and assign it to a name in your code. It should look like this, but with your specific path to the dataset:
+**1.** Add the dataset into your Google Drive.
+**2.** "Mount" your Drive in the Google Colab script: This is done by clicking the folder icon on the left hand side of the opened Google Colab project, and then clicking the folder with the Google Drive icon located below the title "Files."
+**3.** Load the dataset: Copy the dataset's path and assign it to a name in your code. It should look like this, but with your specific path to the dataset:
 ````
   medal = '/content/drive/MyDrive/Intro to Data Science/olympics_08_medalists.csv'
   medal = pd.read_csv(medal);
 ````
-4. After completing these steps, the data should be ready to use in your Google Colab copy of the code!
-5. In this project, I used the pandas, seaborn, and numpy packages. You can load them by copying the code below:
+**4.** After completing these steps, the data should be ready to use in your Google Colab copy of the code!
+**5.** In this project, I used the pandas, seaborn, and numpy packages. You can load them by copying the code below:
 ````
 import pandas as pd
 import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
 ````
-6. Once these steps are followed, simply click "Runtime," and then "Run All" to run the code.
+**6.** Once these steps are followed, simply click "Runtime," and then "Run All" to run the code.
 
 ## 📕Dataset Description 
 This dataset contains information about the 2008 Summer Olympics.
@@ -40,8 +40,8 @@ Below, I have included 2 visualizations made for this project, as well as a brie
 - On the y-axis, the included events are listed, and the x-axis shows the number of medals won. The colors show the type of medal won, intuitively represented by colors similar to the medals (Silver is represented by grey, gold is represnted by yellow, and bronze is represented by red).
 - The bar chart helps show that not all medal winners are included in this data set. For example, the modern pentathlon is missing one bronze medalist. This is important to remember when drawing conclusions from this data set. 
 - As shown, the most medals were given out for the rowing and swimming events, while the fewest medals were given for the triathlon and the modern pentathlon.
-- Why so many: In 2008, there were 14 rowing events, all of which consisted of teams. There were also 34 swimming events, some of which are relays and therefore contain more than one competitor. This helps to explain why so many of each type of medal were given out in these events.
-- Why so few: The triathlon and modern pentathlon both only have two events, one for men and one for women, explaining why so few medals are given out in these events.
+- **Why so many:** In 2008, there were 14 rowing events, all of which consisted of teams. There were also 34 swimming events, some of which are relays and therefore contain more than one competitor. This helps to explain why so many of each type of medal were given out in these events.
+- **Why so few:** The triathlon and modern pentathlon both only have two events, one for men and one for women, explaining why so few medals are given out in these events.
 
 ## ℹ️ References 
 [Data Source](https://edjnet.github.io/OlympicsGoNUTS/2008/)
