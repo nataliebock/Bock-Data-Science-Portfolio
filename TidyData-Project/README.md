@@ -13,7 +13,7 @@
 ## 📖 Instructions 
 My script was written using Google Colaboratory, a simple platform for coding in Python that can be attached to your Google Drive. The instructions provided below describe how to run the code using this platform. 
 
-**1.** Add the dataset to your Google Drive.
+**1.** Add the dataset in this folder entitled "olympics_08_medalists" to your Google Drive.
 
 **2.** "Mount" your Drive in the Google Colab script: This is done by clicking the folder icon on the left hand side of the opened Google Colab project, and then clicking the folder with the Google Drive icon located below the title "Files."
 
@@ -41,8 +41,8 @@ import matplotlib.pyplot as plt
 ## 📷 Visuals 
 Below, I have included 2 visualizations made for this project, as well as a brief explanation and analysis of what is being depicted. To visualize the data, I divided the events into three categories: land events with no ball, land events with a ball, and water events. Below, are the visualizations created for the water events.  
 
-### This visualization shows the number and type of medals won in each water-based event in the 2008 Summer Olympics.
-![Image 3-17-25 at 3 19 PM](https://github.com/user-attachments/assets/48a94d57-9fc6-4e52-b74c-97a6ca934bf8)
+### This visualization shows the number and type of medals won in each water-based event category in the 2008 Summer Olympics.
+<img width="1028" alt="Screenshot 2025-03-17 at 7 30 33 PM" src="https://github.com/user-attachments/assets/85566922-2f7f-419e-9b04-86d030991cd8" />
 - On the y-axis, the included events are listed, and the x-axis shows the number of medals won. The colors show the type of medal won, intuitively represented by colors similar to the medals (Silver is represented by grey, gold is represented by yellow, and bronze is represented by red).
 - The bar chart helps show that not all medal winners are included in this data set. For example, the modern pentathlon is missing one bronze medalist. This is important to remember when drawing conclusions from this data set. 
 - As shown, the most medals were given out for the rowing and swimming events, while the fewest medals were given for the triathlon and the modern pentathlon.
@@ -50,7 +50,7 @@ Below, I have included 2 visualizations made for this project, as well as a brie
 - **Why so few:** The triathlon and modern pentathlon both only have two events, one for men and one for women, explaining why so few medals are given out in these events.
 
 ### This visualization shows the number and gender of athletes competing in each water-based event in the 2008 Summer Olympics.
-![Image 3-17-25 at 3 42 PM](https://github.com/user-attachments/assets/5b6d6f52-a3f6-45f7-a85f-0887dde209ae)
+![Image 3-17-25 at 7 30 PM](https://github.com/user-attachments/assets/443223f9-3e42-4264-b1d6-a4c553652e9f)
 - On the y-axis, the included events are shown. The axis shows the count of the number of male and female athletes in each event that is included in this dataset. The colors represent gender, with blue showing the male athletes and pink showing the female athletes.
 - As depicted, there are only synchronized swimming events for women. There are substantially more male medalists than female medalists in rowing, and canoeing and kayaking.
 - The event with the most male medalists is rowing, while the event with the most female medalists is swimming.
