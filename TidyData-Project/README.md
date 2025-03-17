@@ -23,10 +23,12 @@ My script was written using Google Colaboratory, a simple platform for coding in
 1. Add the dataset into your Google Drive.
 2. "Mount" your Drive in the Google Colab script: This is done by clicking the folder icon on the left hand side of the opened Google Colab project, and then clicking the folder with the Google Drive icon located below the title "Files."
 3. Load the dataset: Copy the dataset's path and assign it to a name in your code. It should look like this, but with your specific path to the dataset:
-   ```
+````
+```
   medal = '/content/drive/MyDrive/Intro to Data Science/olympics_08_medalists.csv'
   medal = pd.read_csv(medal);
 ```
+````
 4. After completing these steps, the data should be ready to use in your Google Colab copy of the code!
 5. In this project, I used the pandas, seaborn, and numpy packages. You can load them by copying the code below:
 ADDDD CODE HERE
