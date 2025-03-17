@@ -33,11 +33,6 @@ This dataset contains information about the 2008 Summer Olympics.
 - After cleaning, the variables included are the names of the competitor, their gender, the event they competed in, and the type of medal they won – if they did win a medal.
 - The data comes from a dataset by Giorgio Comai (OBCT/CCI) for EDJNet, linked below. In the original data, country is also included as a variable, as well as a medal count per person. In this case, these variables were not included, showing that the main objective here is whether or not someone won a medal, and what type of medal, rather than how many they have won over time.
 
-## ℹ️ References 
-[Data Source](https://edjnet.github.io/OlympicsGoNUTS/2008/)
-[Tidy Data by Hadley Wickham](https://vita.had.co.nz/papers/tidy-data.pdf)
-[Data Cleaning Reference Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
-
 ## 📷 Visuals 
 Below, I have included 2 visualizations made for this project, as well as a brief explanation and analysis of what is being depicted. To visualize the data, I divided the events into three categories: land events with no ball, land events with a ball, and water events. Below, are the visualizations created for the water events.   
 ### This visualziation shows the number and type of medals won in each water-based event in the 2008 Summer Olympics.
@@ -46,5 +41,11 @@ Below, I have included 2 visualizations made for this project, as well as a brie
 - The bar chart helps show that not all medal winners are included in this data set. For example, the modern pentathlon is missing one bronze medalist. This is important to remember when drawing conclusions from this data set. 
 - As shown, the most medals were given out for the rowing and swimming events, while the fewest medals were given for the triathlon and the modern pentathlon.
 - Why so many: In 2008, there were 14 rowing events, all of which consisted of teams. There were also 34 swimming events, some of which are relays and therefore contain more than one competitor. This helps to explain why so many of each type of medal were given out in these events.
-- Why so few: The triathlon and modern pentathlon both only have two events, one for men and one for women, explaining why so few medals are given out in these events. 
+- Why so few: The triathlon and modern pentathlon both only have two events, one for men and one for women, explaining why so few medals are given out in these events.
+
+## ℹ️ References 
+[Data Source](https://edjnet.github.io/OlympicsGoNUTS/2008/)
+[Tidy Data by Hadley Wickham](https://vita.had.co.nz/papers/tidy-data.pdf)
+[Data Cleaning Reference Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+[Information about the Summer 2008 Olympics ]([url](https://www.olympics.com/en/olympic-games/beijing-2008/results))
 
