@@ -31,7 +31,13 @@ My script was written using Google Colaboratory, a simple platform for coding in
 ````
 4. After completing these steps, the data should be ready to use in your Google Colab copy of the code!
 5. In this project, I used the pandas, seaborn, and numpy packages. You can load them by copying the code below:
-ADDDD CODE HERE
+````
+
+import pandas as pd
+import seaborn as sns
+import numpy as np
+
+````
 6. Once these steps are followed, simply click "Runtime," and then "Run All" to run the code.
 
 ## Dataset Description: 
