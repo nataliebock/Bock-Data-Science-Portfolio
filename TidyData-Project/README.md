@@ -49,6 +49,12 @@ Below, I have included 2 visualizations made for this project, as well as a brie
 
 ### This visualization shows the number and gender of athletes competing in each water-based event in the 2008 Summer Olympics.
 ![Image 3-17-25 at 3 42 PM](https://github.com/user-attachments/assets/5b6d6f52-a3f6-45f7-a85f-0887dde209ae)
+- On the y-axis, the included events are shown. The axis show the count of the number of male and female athletes in each event that are included in this dataset. The colors represent gender, with blue showing the male athletes and pink showing the female athletes.
+- As depicted, there are only synchronized swimming events for women. There are more substantially more male medalists than female medalists in rowing and canoeing and kayaking.
+- The event with the most male medialists is rowing, while the event with the most female medalists is swimming.
+
+#### If you are interested in viewing the bar charts for the other subsets of the events, follow the previous instructions to load the code and view the visualizations. 
+  
 
 
 ## ℹ️ References 
