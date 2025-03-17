@@ -47,5 +47,5 @@ Below, I have included 2 visualizations made for this project, as well as a brie
 [Data Source](https://edjnet.github.io/OlympicsGoNUTS/2008/)
 [Tidy Data by Hadley Wickham](https://vita.had.co.nz/papers/tidy-data.pdf)
 [Data Cleaning Reference Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
-[Information about the Summer 2008 Olympics ]([url](https://www.olympics.com/en/olympic-games/beijing-2008/results))
+[Information about the Summer 2008 Olympics ](https://www.olympics.com/en/olympic-games/beijing-2008/results)
 
