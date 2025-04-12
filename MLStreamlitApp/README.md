@@ -18,7 +18,7 @@ Visual Examples: Consider adding screenshots of the app or charts produced by th
 ### 📚 Necessary Libraries and Versions
 
 ## 📲 App Features  
-- The features 3 model types: Decision Trees, Logisitic Regression, and Linear Regression. A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app. 
+****The features 3 model types: Decision Trees, Logisitic Regression, and Linear Regression. A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.****
 #### Decision Trees
 - Can be used for classification and regression. In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion (or prediction in the case of regression) can be reached, represented by a leaf node, something with no more branches
 - **Hyperparameters:** The hyperparameters used in this Streamlit app are maximum depth, minimum number of samples for a split, and the app also gives the option to choose between entropy, gini index, or logloss. A brief description of what these do is provided below.
