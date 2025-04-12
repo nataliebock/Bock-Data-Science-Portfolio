@@ -21,10 +21,8 @@ Visual Examples: Consider adding screenshots of the app or charts produced by th
 ## ℹ️ References 
 [Installing Graphviz](https://anaconda.org/conda-forge/python-graphviz)
 [Logisitic Regression Inspiration](https://github.com/ragh945/tuning-of-hyperparameters-for-logisticregression_using-decision-surfaces/blob/main/Hyperparameters.py)
-[Linear Regression Inspiration] (https://github.com/matejve/linear_regression_demo/blob/main/Introduction_Page.py)
-[Other Streamlit App Inspiration] (https://varunlobo-decision-tree-using-streamlit-main-myvzpw.streamlit.app/)
-
-
+[Linear Regression Inspiration](https://github.com/matejve/linear_regression_demo/blob/main/Introduction_Page.py)
+[Other Streamlit App Inspiration](https://varunlobo-decision-tree-using-streamlit-main-myvzpw.streamlit.app/)
 
 
 
