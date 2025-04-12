@@ -30,6 +30,8 @@ Visual Examples: Consider adding screenshots of the app or charts produced by th
 [Logisitic Regression Inspiration](https://github.com/ragh945/tuning-of-hyperparameters-for-logisticregression_using-decision-surfaces/blob/main/Hyperparameters.py)
 [Linear Regression Inspiration](https://github.com/matejve/linear_regression_demo/blob/main/Introduction_Page.py)
 [Other Streamlit App Inspiration](https://varunlobo-decision-tree-using-streamlit-main-myvzpw.streamlit.app/)
+
+
 **Learn More About the Model Types:**
 [Grokking Machine Learning](https://www.google.com/books/edition/Grokking_Machine_Learning/X-9MEAAAQBAJ?hl=en&gbpv=1&pg=PA1&printsec=frontcover) 
 
