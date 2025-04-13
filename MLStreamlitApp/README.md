@@ -1,13 +1,7 @@
-Content Suggestions:
-Instructions: Include step-by-step instructions on how to run the app locally and a link to the deployed version. List all necessary libraries and versions.
-App Features: Explain the models you used and describe how hyperparameters are selected or tuned.
-References: Include links to documentation, tutorials, or guides that informed your implementation.
-Visual Examples: Consider adding screenshots of the app or charts produced by the app.
-
 # Machine Learning Streamlit App 
 
 ## 📕 Project Overview 
-#### This interactive Streamlit app allows users to use 3 different models (decision trees, linear regression and logistic regression) to evaluate data. 3 sample datasets are loaded, but users also have the option to upload their own dataset as a CSV. Users can view various metrics including F1 scores, RMSE and R squared scores, Gini index and entropy, depending on what model is selected. 
+#### This interactive Streamlit app allows users to use 3 different models (decision trees, linear regression and logistic regression) to evaluate data. 3 sample datasets are loaded, but users also have the option to upload their own dataset as a CSV. Users can evaluate model performance by viewing various [metrics](## 📲 App Features) depending on what model is selected. 
 - **Project Goal:** Demonstrate the ability to create an interactive Streamlit app that showcases the pros and cons of different machine learning models for evaluation and prediction. 
 - **Skills and Packages Applied:** Python, Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Graphviz, Decision Trees, Logistic Regression, and Linear Regression
 
@@ -74,9 +68,9 @@ import graphviz
 ### Linear Regression 
 - **Purpose:** Can be used for linear relationships where the feature variables are numeric or categorical and the target is something on a continuous numeric scale. A linear regression model is helpful for evaluating a relationship between variables.
 - **Evaluation Metrics:** 
-  - Mean Squared Error (MSE)
-  - Root Mean Squared Error (RMSE)
-  - R² Score 
+  - Mean Squared Error (MSE): Shows the average squared difference between actual and predicted values, where a lower value means a better model
+  - Root Mean Squared Error (RMSE): The difference between actual and predicted values, in the same units as the target, a lower value means a better model
+  - R² Score: Shows the proportion of variance that the model accounts for. On a scale from 0 - 1, a score closer to 1 indictates a model that better accounts for variance
 
 ### Logistic Regression 
 - **Purpose:** Can be used with a binary target variable and numeric features to evaluate the probability of something happening. A logisitc regression may be the best option if the goal is to see how the selected features impact the outcome's probability.
