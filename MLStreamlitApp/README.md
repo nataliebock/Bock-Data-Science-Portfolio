@@ -56,7 +56,7 @@ import graphviz
 ## 📲 App Features  
 ****The features 3 model types: Decision Trees, Logisitic Regression, and Linear Regression. A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.****
 ### Decision Trees
-- Can be used for classification and regression. In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion (or prediction in the case of regression) can be reached, represented by a leaf node, something with no more branches
+- **Purpose:** Can be used for classification and regression. In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion (or prediction in the case of regression) can be reached, represented by a leaf node, something with no more branches
 **Hyperparameters:** The hyperparameters used in this Streamlit are depicted and described below. 
 <img width="794" alt="Screenshot 2025-04-13 at 11 20 46 AM" src="https://github.com/user-attachments/assets/9f2da996-c7cf-49ab-9448-aa60cefbbb9c" />
 
@@ -71,11 +71,14 @@ import graphviz
 
   - ***Log loss:*** An evaluation metric for binary classification models. <ins>Lower log loss = predicted probabilities are more accurate in the model</ins>
 
-#### Linear Regression 
-- Can be used for linear relationships where the feature variables are numeric or categorical and the target is something on a continuous numeric scale. A linear regression model is helpful for evaluating a relationship between variables.
+### Linear Regression 
+- **Purpose:** Can be used for linear relationships where the feature variables are numeric or categorical and the target is something on a continuous numeric scale. A linear regression model is helpful for evaluating a relationship between variables.
+- **Evaluation Metrics:** 
+  - Mean Squared Error (MSE)
+  - Root Mean Squared Error (RMSE)
+  - R² Score 
 
-
-#### Logistic Regression 
+### Logistic Regression 
 - **Purpose:** Can be used with a binary target variable and numeric features to evaluate the probability of something happening. A logisitc regression may be the best option if the goal is to see how the selected features impact the outcome's probability.
 - **Evaluation metrics:**
   - Classification report displaying accuracy, precision, recall, and F1-score
