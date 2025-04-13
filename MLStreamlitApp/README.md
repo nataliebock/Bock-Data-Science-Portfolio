@@ -15,6 +15,25 @@ Visual Examples: Consider adding screenshots of the app or charts produced by th
 
 
 ### 📚 Necessary Libraries and Versions
+- **necessary libraries:** Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Graphviz
+- - For more specifics, view the code below:
+````
+import pandas as pd
+import streamlit as st
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+from sklearn import metrics
+from sklearn.model_selection import train_test_split
+from sklearn import tree
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+from sklearn.metrics import roc_curve, roc_auc_score
+import graphviz;
+````
 
 ## 📲 App Features  
 ****The features 3 model types: Decision Trees, Logisitic Regression, and Linear Regression. A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.****
