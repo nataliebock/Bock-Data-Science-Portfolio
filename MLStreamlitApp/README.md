@@ -85,6 +85,7 @@ import graphviz
 [Logisitic Regression Inspiration](https://github.com/ragh945/tuning-of-hyperparameters-for-logisticregression_using-decision-surfaces/blob/main/Hyperparameters.py)
 [Linear Regression Inspiration](https://github.com/matejve/linear_regression_demo/blob/main/Introduction_Page.py)
 [Other Streamlit App Inspiration](https://varunlobo-decision-tree-using-streamlit-main-myvzpw.streamlit.app/)
+[Links to different Readme sections](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 
 
 **Learn More About the Model Types:**
