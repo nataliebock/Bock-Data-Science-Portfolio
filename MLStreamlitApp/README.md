@@ -55,9 +55,9 @@ import graphviz
 
 ## 📲 App Features  
 ****The features 3 model types: Decision Trees, Logisitic Regression, and Linear Regression. A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.****
-#### Decision Trees
+### Decision Trees
 - Can be used for classification and regression. In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion (or prediction in the case of regression) can be reached, represented by a leaf node, something with no more branches
-- **Hyperparameters:** The hyperparameters used in this Streamlit are depicted and described below. 
+**Hyperparameters:** The hyperparameters used in this Streamlit are depicted and described below. 
 <img width="794" alt="Screenshot 2025-04-13 at 11 20 46 AM" src="https://github.com/user-attachments/assets/9f2da996-c7cf-49ab-9448-aa60cefbbb9c" />
 
 
@@ -65,7 +65,7 @@ import graphviz
 
 - ***Minimum samples to split:*** The minimum number of samples required to allow a split in node. This is a helpful hyperparameter to help prevent oversplitting,when the data is split too much so the leaves will not have enough samples.
 - ***Entropy vs Gini Index vs Log loss:***
-  - Gini index: Measure of diversity based on the probability of certain values being in a node. A lower score, closer to 0, indicates a purer and better split.
+  - ***Gini index:*** Measure of diversity based on the probability of certain values being in a node. A lower score, closer to 0, indicates a purer and better split.
   - Lower gini index = better split 
 
 - ***Entropy:*** Measures the diversity of the set, if the data split results in a lower combined entropy, it’s a better split. 
