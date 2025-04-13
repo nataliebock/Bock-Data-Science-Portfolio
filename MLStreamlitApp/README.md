@@ -90,3 +90,10 @@ import graphviz
 
 
 ## 📸 Visual Examples: 
+- Below is a visualization of a confusion matrix made for the Titanic dataset using a logistic regression model. A confusion matrix can also be made using the Decision Tree model. 
+<img width="824" alt="Screenshot 2025-04-13 at 1 07 24 PM" src="https://github.com/user-attachments/assets/d737f069-84e7-4701-8b7a-a88491ab9c45" />
+
+- Below is a visualization of a ROC curve made for the Titanic dataset using a logistic regression model. A confusion matrix can also be generated for the Decision Tree model. 
+<img width="794" alt="Screenshot 2025-04-13 at 1 09 00 PM" src="https://github.com/user-attachments/assets/cab4e2bc-398f-4cb7-8470-8d1f8f7e4033" />
+
+
