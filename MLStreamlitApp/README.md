@@ -17,6 +17,7 @@ This script was written in Visual Studio code. The instructions below detail how
 **Run the App Locally:**
 
 
+
 **1.** Import the packages and libraries detailed in the "Necessary Libraries and Versions section below."
 
 
@@ -56,6 +57,7 @@ import graphviz
 #### Decision Trees
 - Can be used for classification and regression. In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion (or prediction in the case of regression) can be reached, represented by a leaf node, something with no more branches
 - **Hyperparameters:** The hyperparameters used in this Streamlit app are maximum depth, minimum number of samples for a split, and the app also gives the option to choose between entropy, gini index, or logloss. A brief description of what these do is provided below.
+<img width="794" alt="Screenshot 2025-04-13 at 11 20 46 AM" src="https://github.com/user-attachments/assets/9f2da996-c7cf-49ab-9448-aa60cefbbb9c" />
   - ***Maximum depth:*** Changes how many levels the decision tree will have, with a smaller number meaning there will be fewer levels.
   - ***Minimum samples to split:*** The minimum number of samples required to allow a split in node. This is a helpful hyperparameter to help prevent oversplitting,when the data is split too much so the leaves will not have enough samples.
   - ***Entropy vs Gini Index vs Log loss:***
