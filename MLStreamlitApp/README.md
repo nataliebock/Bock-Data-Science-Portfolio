@@ -18,7 +18,7 @@ This script was written in Visual Studio code. The instructions below detail how
 
 
 
-**1.** Import the packages and libraries detailed in the "Necessary Libraries and Versions section below."
+**1.** Import the packages and libraries detailed in the "Necessary Libraries and Versions section" below.
 
 
 **2.** Run Streamlit in your terminal and open the prompted link to view the app. For more detailed instructions on this setup, click [here](https://docs.kanaries.net/topics/Streamlit/streamlit-vscode)
@@ -32,8 +32,8 @@ To view the App without running the code, click here
 
 
 ### 📚 Necessary Libraries and Versions
-- **necessary libraries and packages:** Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Graphviz
-- - For more specifics, view the code below:
+- **necessary libraries and packages:** Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, and Graphviz
+ - For more specifics, view the code below:
 ````
 import pandas as pd
 import streamlit as st
@@ -51,6 +51,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.metrics import roc_curve, roc_auc_score
 import graphviz
 ````
+- ***Note:*** Graphviz must also be Conda installed in Visual Studio code. For installation instructions, click [here](https://anaconda.org/conda-forge/python-graphviz) 
 
 ## 📲 App Features  
 ****The features 3 model types: Decision Trees, Logisitic Regression, and Linear Regression. A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.****
@@ -63,7 +64,7 @@ import graphviz
 - ***Maximum depth:*** Changes how many levels the decision tree will have, with a smaller number meaning there will be fewer levels.
 
 - ***Minimum samples to split:*** The minimum number of samples required to allow a split in node. This is a helpful hyperparameter to help prevent oversplitting,when the data is split too much so the leaves will not have enough samples.
-- ***Entropy vs Gini Index vs Log loss:***
+- ***Entropy vs Gini Index vs Log loss:*** 
 
 #### Linear Regression 
 - Can be used for linear relationships where the feature variables are numeric or categorical and the target is something on a continuous numeric scale. A linear regression model is helpful for evaluating a relationship between variables.
