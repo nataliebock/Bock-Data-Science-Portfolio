@@ -76,8 +76,13 @@ import graphviz
 
 
 #### Logistic Regression 
-- **Logistic Regression:** Can be used with binary variables to evaluate how these features influence the probability of something happening. A logisitc regression may be the best option if the goal is to see how each selected feature impact the outcome's probability.
-- 
+- **Purpose:** Can be used with a binary target variable and numeric features to evaluate the probability of something happening. A logisitc regression may be the best option if the goal is to see how the selected features impact the outcome's probability.
+- **Evaluation metrics:**
+  - Classification report displaying accuracy, precision, recall, and F1-score
+  - Confusion matrix
+  - ROC curve and AUC score
+
+   
 ## ℹ️ References 
 [Installing Graphviz](https://anaconda.org/conda-forge/python-graphviz)
 [Logisitic Regression Inspiration](https://github.com/ragh945/tuning-of-hyperparameters-for-logisticregression_using-decision-surfaces/blob/main/Hyperparameters.py)
