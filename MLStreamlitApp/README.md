@@ -68,16 +68,17 @@ import graphviz
 ### Linear Regression 
 - **Purpose:** Can be used for linear relationships where the feature variables are numeric or categorical and the target is something on a continuous numeric scale. A linear regression model is helpful for evaluating a relationship between variables.
 - **Evaluation Metrics:** 
-  - Mean Squared Error (MSE): Shows the average squared difference between actual and predicted values, where a lower value means a better model
-  - Root Mean Squared Error (RMSE): The difference between actual and predicted values, in the same units as the target, a lower value means a better model
-  - R² Score: Shows the proportion of variance that the model accounts for. On a scale from 0 - 1, a score closer to 1 indictates a model that better accounts for variance
+  - ***Mean Squared Error (MSE):*** Shows the average squared difference between actual and predicted values, where a lower value means a better model
+  - ***Root Mean Squared Error (RMSE):*** The difference between actual and predicted values, in the same units as the target, a lower value means a better model
+  - ***R² Score:*** Shows the proportion of variance that the model accounts for. On a scale from 0 - 1, a score closer to 1 indictates a model that better accounts for variance
 
 ### Logistic Regression 
 - **Purpose:** Can be used with a binary target variable and numeric features to evaluate the probability of something happening. A logisitc regression may be the best option if the goal is to see how the selected features impact the outcome's probability.
 - **Evaluation metrics:**
-  - Classification report displaying accuracy, precision, recall, and F1-score
-  - Confusion matrix
-  - ROC curve and AUC score
+  - ***Classification report:*** displaying accuracy, precision, recall, and F1-score
+  - ***Confusion matrix:*** Evaluates performance by comparing predictions from the model to actual values. The key parts of the confusion matrix are the true negatives (located in the top left corner), and the true positives (located in the bottom right corner). These show the number of times the model correctly predicts something that is actually negative or actually positive.
+  - ***ROC curve:*** The ROC, or Reciever Operating Characteristic, Curve shows a plot of the True Positive Rate and the False Positive Rate. This is helpful for selecting the threshold, where the number of true positives can be maximized, while also keeping a low percentage of false positives.
+  - ***The AUC Score:*** The AUC, or area under the curve, summarizes the model performance. The AUC score is on a scale from 0-1, and should be better than 0.5, which represents a 50 percent chance of correct prediction. If the score is better than 0.5, it means that the model is better at predicting true positives than random guessing.
 
    
 ## ℹ️ References 
