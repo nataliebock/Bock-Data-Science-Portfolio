@@ -65,14 +65,11 @@ import graphviz
 
 - ***Minimum samples to split:*** The minimum number of samples required to allow a split in node. This is a helpful hyperparameter to help prevent oversplitting,when the data is split too much so the leaves will not have enough samples.
 - ***Entropy vs Gini Index vs Log loss:***
-  - ***Gini index:*** Measure of diversity based on the probability of certain values being in a node. A lower score, closer to 0, indicates a purer and better split.
-  - Lower gini index = better split 
+  - ***Gini index:*** Measure of diversity based on the probability of certain values being in a node. A lower score, closer to 0, indicates a purer and better split. <ins>Lower gini index = better split</ins> 
 
-- ***Entropy:*** Measures the diversity of the set, if the data split results in a lower combined entropy, it’s a better split. 
-  - Lower average entropy = better split 
+ - ***Entropy:*** Measures the diversity of the set, if the data split results in a lower combined entropy, it’s a better split. <ins>Lower average entropy = better split</ins> 
 
-- ***Log loss:*** An evaluation metric for binary classification models
-  - Lower log loss = predicted probabilities are more accurate in the model 
+ - ***Log loss:*** An evaluation metric for binary classification models. <ins>Lower log loss = predicted probabilities are more accurate in the model</ins>
 
 #### Linear Regression 
 - Can be used for linear relationships where the feature variables are numeric or categorical and the target is something on a continuous numeric scale. A linear regression model is helpful for evaluating a relationship between variables.
