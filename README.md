@@ -6,6 +6,11 @@ This portfolio showcases the assignments and projects created in a data science 
 - The first Streamlit app I've created looks at data on Penguins. Using the interactive sliders and drop-down menu widgets, the user can learn more about the data set and penguins.
 - This project complements my portfolio by showing how I can use Streamlit to create interactive apps with a polished look. While it is a simple app, it is a good introductory project. 
 
+### [Machine Learning App](https://github.com/nataliebock/Bock-Data-Science-Portfolio/tree/main/MLStreamlitApp) ⚙️ 
+- This Streamlit app allows users to evaluate and make predictions based on data through 3 different machine learning models: decision trees, logistic regression, and linear regression.
+- This project complements my portfoliio by demonstrating a more complex use of Streamlit, and the use and understanding of different machine learning models.
+- **Skills and Packages:** Python, Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Graphviz, Decision Trees, Logistic Regression, and Linear Regression
+
 ## Data Cleaning Projects: 
 ### [Olympics Tidy Data Project](https://github.com/nataliebock/Bock-Data-Science-Portfolio/tree/main/TidyData-Project) 🥇 
 - This project uses the principles of tidy data to clean a dataset containing information about the 2008 Summer Olympics.
