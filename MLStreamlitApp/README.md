@@ -94,13 +94,13 @@ import graphviz
 
 
 ## 📸 Visual Examples: 
-- Below is a decision tree made with the Titanic dataset, where a maximum depth of 4 and a minimum samples to split of 5 were selected, along with a gini criteria. 
+- **Below is a decision tree made with the Titanic dataset, where a maximum depth of 4 and a minimum samples to split of 5 were selected, along with a gini criteria.** 
 <img width="1434" alt="Screenshot 2025-04-13 at 1 52 32 PM" src="https://github.com/user-attachments/assets/a83fe648-6780-4729-bc5e-19c700fe52c5" />
 
-- Below is a visualization of a confusion matrix made for the Titanic dataset using a logistic regression model.
+- **Below is a visualization of a confusion matrix made for the Titanic dataset using a logistic regression model.**
 <img width="824" alt="Screenshot 2025-04-13 at 1 07 24 PM" src="https://github.com/user-attachments/assets/d737f069-84e7-4701-8b7a-a88491ab9c45" />
 
-- Below is a visualization of a ROC curve made for the Titanic dataset using a logistic regression model. A ROC curve can also be generated for the Decision Tree model. 
+- **Below is a visualization of a ROC curve made for the Titanic dataset using a logistic regression model. A ROC curve can also be generated for the Decision Tree model.**
 <img width="794" alt="Screenshot 2025-04-13 at 1 09 00 PM" src="https://github.com/user-attachments/assets/cab4e2bc-398f-4cb7-8470-8d1f8f7e4033" />
 
 
