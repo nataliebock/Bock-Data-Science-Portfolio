@@ -13,13 +13,17 @@ Visual Examples: Consider adding screenshots of the app or charts produced by th
 
 ## 📖 Instructions 
 This script was written in Visual Studio code. The instructions below detail how to run the code using this platform.
+
 **Run the App Locally:**
+
 **1.** Import the packages and libraries detailed in the "Necessary Libraries and Versions section below."
+
 **2.** Run Streamlit in your terminal and open the prompted link to view the app. For more detailed instructions on this setup, click [here](https://docs.kanaries.net/topics/Streamlit/streamlit-vscode)
+
 **3.** Once these steps are completed, you will be able to run the code in your own VS code environment! 
 
-#### Direct Link to the Deployed Version
-
+**Direct Link to the Deployed Version**
+To view the App without running the code, click here 
 
 
 
