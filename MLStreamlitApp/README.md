@@ -12,10 +12,19 @@ Visual Examples: Consider adding screenshots of the app or charts produced by th
 - **Skills and Packages Applied:** Python, Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Graphviz, Decision Trees, Logistic Regression, and Linear Regression
 
 ## 📖 Instructions 
+This script was written in Visual Studio code. The instructions below detail how to run the code using this platform.
+**Run the App Locally:**
+**1.** Import the packages and libraries detailed in the "Necessary Libraries and Versions section below."
+**2.** Run Streamlit in your terminal and open the prompted link to view the app. For more detailed instructions on this setup, click [here](https://docs.kanaries.net/topics/Streamlit/streamlit-vscode)
+**3.** Once these steps are completed, you will be able to run the code in your own VS code environment! 
+
+#### Direct Link to the Deployed Version
+
+
 
 
 ### 📚 Necessary Libraries and Versions
-- **necessary libraries:** Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Graphviz
+- **necessary libraries and packages:** Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Graphviz
 - - For more specifics, view the code below:
 ````
 import pandas as pd
@@ -32,7 +41,7 @@ from sklearn.model_selection import train_test_split
 from sklearn import tree
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.metrics import roc_curve, roc_auc_score
-import graphviz;
+import graphviz
 ````
 
 ## 📲 App Features  
