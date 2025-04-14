@@ -44,6 +44,7 @@ from sklearn import tree
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.metrics import roc_curve, roc_auc_score
 import graphviz
+from sklearn.preprocessing import StandardScaler
 ````
 - ***Note:*** Graphviz must also be Conda installed in Visual Studio code. For installation instructions, click [here](https://anaconda.org/conda-forge/python-graphviz) 
 
@@ -59,7 +60,7 @@ seaborn==0.13.2
 streamlit==1.37.1
 ````
 ## 📲 App Features  
-****The app features 3 model types: Decision Trees, Logisitic Regression, and Linear Regression. A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.****
+****The app features 3 model types: Decision Trees, Logistic Regression, and Linear Regression. A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.****
 ### Decision Trees
 - **Purpose:** Can be used for classification and regression. In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion (or prediction in the case of regression) can be reached, represented by a leaf node, something with no more branches
 **Hyperparameters:** The hyperparameters used in this Streamlit are depicted and described below. 
@@ -68,7 +69,7 @@ streamlit==1.37.1
 
 - ***Maximum depth:*** Changes how many levels the decision tree will have, with a smaller number meaning there will be fewer levels.
 
-- ***Minimum samples to split:*** The minimum number of samples required to allow a split in node. This is a helpful hyperparameter to help prevent oversplitting,when the data is split too much so the leaves will not have enough samples.
+- ***Minimum samples to split:*** The minimum number of samples required to allow a split in node. This is a helpful hyperparameter to help prevent oversplitting, when the data is split too much so the leaves do not have enough samples.
 - ***Entropy vs Gini Index vs Log loss:***
   - ***Gini index:*** Measure of diversity based on the probability of certain values being in a node. A lower score, closer to 0, indicates a purer and better split. <ins>Lower gini index = better split</ins> 
 
@@ -78,14 +79,14 @@ streamlit==1.37.1
 
 ### Linear Regression 
 - **Purpose:** Can be used for linear relationships where the feature variables are numeric or categorical and the target is something on a continuous numeric scale. A linear regression model is helpful for evaluating a relationship to a numeric variable. For example, a one unit increase in y increases x by 15 points.
-- **Scaled vs Unscaled:** The linear regression model also allows users to select whether they would like to use scaled or unscaled data. Using unscaled data can make it difficult compare features measured in different units. By scaling the data, it becomes easier to draw comparisons across the different features.
+- **Scaled vs Unscaled:** The linear regression model also allows users to select whether they would like to use scaled or unscaled data. Using unscaled data can make it difficult to compare features measured in different units. By scaling the data, it becomes easier to draw comparisons across the different features.
   - **What the scale prompt looks like in Streamlit**
 <img width="339" alt="Screenshot 2025-04-14 at 6 48 36 PM" src="https://github.com/user-attachments/assets/7a1a450c-7073-4593-9845-b3398efab6ed" />
 
 - **Evaluation Metrics:** 
   - ***Mean Squared Error (MSE):*** Shows the average squared difference between actual and predicted values, where a lower value means a better model
   - ***Root Mean Squared Error (RMSE):*** The difference between actual and predicted values, in the same units as the target, a lower value means a better model
-  - ***R² Score:*** Shows the proportion of variance that the model accounts for. On a scale from 0 - 1, a score closer to 1 indictates a model that better accounts for variance
+  - ***R² Score:*** Shows the proportion of variance that the model accounts for. On a scale from 0 - 1, a score closer to 1 indicates a model that better accounts for variance
 
 ### Logistic Regression 
 - **Purpose:** Can be used with a binary target variable and numeric features to evaluate the probability of something happening. A logisitc regression may be the best option if the goal is to see how the selected features impact the outcome's probability.
