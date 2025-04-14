@@ -47,6 +47,17 @@ import graphviz
 ````
 - ***Note:*** Graphviz must also be Conda installed in Visual Studio code. For installation instructions, click [here](https://anaconda.org/conda-forge/python-graphviz) 
 
+#### Versions 
+Below are the listed versions of the packages and libraries used in this app:
+````
+graphviz==0.20.3
+matplotlib==3.10.1
+numpy==2.2.4
+pandas==2.2.3
+scikit_learn==1.6.1
+seaborn==0.13.2
+streamlit==1.37.1
+````
 ## 📲 App Features  
 ****The app features 3 model types: Decision Trees, Logisitic Regression, and Linear Regression. A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.****
 ### Decision Trees
