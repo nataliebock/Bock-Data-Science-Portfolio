@@ -48,7 +48,7 @@ import graphviz
 - ***Note:*** Graphviz must also be Conda installed in Visual Studio code. For installation instructions, click [here](https://anaconda.org/conda-forge/python-graphviz) 
 
 ## 📲 App Features  
-****The features 3 model types: Decision Trees, Logisitic Regression, and Linear Regression. A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.****
+****The app features 3 model types: Decision Trees, Logisitic Regression, and Linear Regression. A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.****
 ### Decision Trees
 - **Purpose:** Can be used for classification and regression. In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion (or prediction in the case of regression) can be reached, represented by a leaf node, something with no more branches
 **Hyperparameters:** The hyperparameters used in this Streamlit are depicted and described below. 
