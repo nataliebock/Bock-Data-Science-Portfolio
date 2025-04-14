@@ -3,7 +3,7 @@
 ## 📕 Project Overview 
 #### This interactive Streamlit app allows users to use 3 different models (decision trees, linear regression and logistic regression) to evaluate data. 3 sample datasets are loaded, but users also have the option to upload their own dataset as a CSV. Users can evaluate model performance by viewing various [metrics](#-App-Features) depending on what model is selected. 
 - **Project Goal:** Demonstrate the ability to create an interactive Streamlit app that showcases the pros and cons of different machine learning models for evaluation and prediction. 
-- **Skills and Packages Applied:** Python, Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Graphviz, Decision Trees, Logistic Regression, and Linear Regression
+- **Skills and Packages Applied:** Python, Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Graphviz, Machine Learning, Decision Trees, Logistic Regression, and Linear Regression
 
 ## 📖 Instructions 
 This script was written in Visual Studio code. The instructions below detail how to run the code using this platform.
