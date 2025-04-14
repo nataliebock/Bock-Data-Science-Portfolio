@@ -93,7 +93,7 @@ import graphviz
 [Grokking Machine Learning](https://www.google.com/books/edition/Grokking_Machine_Learning/X-9MEAAAQBAJ?hl=en&gbpv=1&pg=PA1&printsec=frontcover) 
 
 
-## 📸 Visual Examples: 
+## 📸 Visual Examples 
 - **Below is a decision tree made with the Titanic dataset, where a maximum depth of 4 and a minimum samples to split of 5 were selected, along with a gini criteria.** 
 <img width="1434" alt="Screenshot 2025-04-13 at 1 52 32 PM" src="https://github.com/user-attachments/assets/a83fe648-6780-4729-bc5e-19c700fe52c5" />
 
