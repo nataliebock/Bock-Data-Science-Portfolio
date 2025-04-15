@@ -80,15 +80,15 @@ streamlit==1.37.1
 ### Linear Regression 
 - **Purpose:**  Can be used for linear relationships where the target is something on a continuous numeric scale, or a categorical numerical scale in some cases. A linear regression model is helpful for evaluating a relationship between variables, for example, a one unit increase in y increases x by 15 points. A good model choice is the target variable is numeric.
 - **Scaled vs Unscaled:** The linear regression model also allows users to select whether they would like to use scaled or unscaled data. Using unscaled data can make it difficult to compare features measured in different units. By scaling the data, it becomes easier to draw comparisons across the different features.
+- **Evaluation Metrics:** 
+  - ***Mean Squared Error (MSE):*** Shows the average squared difference between actual and predicted values, where a lower value generally means a better model
+  - ***Root Mean Squared Error (RMSE):*** The difference between actual and predicted values, in the same units as the target, a lower value generally means a better model
+  - ***R² Score:*** Shows the proportion of variance that the model accounts for. On a scale from 0 - 1, a score closer to 1 indicates a model that better accounts for variance
   
 **The scale prompt in Streamlit is shown below ⬇️**
 
 <img width="339" alt="Screenshot 2025-04-14 at 6 48 36 PM" src="https://github.com/user-attachments/assets/7a1a450c-7073-4593-9845-b3398efab6ed" />
 
-- **Evaluation Metrics:** 
-  - ***Mean Squared Error (MSE):*** Shows the average squared difference between actual and predicted values, where a lower value means a better model
-  - ***Root Mean Squared Error (RMSE):*** The difference between actual and predicted values, in the same units as the target, a lower value means a better model
-  - ***R² Score:*** Shows the proportion of variance that the model accounts for. On a scale from 0 - 1, a score closer to 1 indicates a model that better accounts for variance
 
 ### Logistic Regression 
 - **Purpose:** To evaluate the probability of the features influencing the target variable. The target variable should be categorical, while the features can be categorical or numeric. A good model selection if the intended target variable is binary.
