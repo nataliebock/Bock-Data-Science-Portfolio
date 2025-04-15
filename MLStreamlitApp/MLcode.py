@@ -56,32 +56,34 @@ elif sam_data == "Penguins":
 if df is not None:
     st.write("**Preview of Dataset**", df.head()) #show a preview of df selected 
 
-    # Selecting columns
-    sel_col = st.selectbox("Select the target column", df.columns) #if only want to use some columns, selecting here
-    features = st.multiselect("Select the features you would like to use:", options=[col for col in df.columns if col != sel_col]) #allowing users to select multiple feature columns, besides the sel_col / the target column previously selected 
+    # Selecting columns #if only want to use some columns, selecting here
+    sel_col = st.selectbox("**Select the target column**", df.columns) #allowing user to pick what they want as the target column
+    features = st.multiselect("**Select the features you would like to use:**", options=[col for col in df.columns if col != sel_col]) #allowing users to select multiple feature columns, besides the sel_col / the target column previously selected 
 
     if features:
         X = df[features] #defining X 
         y = df[sel_col] #defining y
 
         #Splitting the data into train and test groups 
-        split = st.slider("Split the Data into Training and Testing", 10, 90, 20) / 100 #creating slider so users can select train/test split, lowest value 10, highest value 90, default to on 20 
+        split = st.slider("**Split the Data into Training and Testing**", 10, 90, 20) / 100 #creating slider so users can select train/test split, lowest value 10, highest value 90, default to on 20 
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=split)
+        st.markdown(f"Number in Training Set: {len(X_train)}") #using len and f to print out the number of training samples so it is more clear to the user 
+        st.markdown(f"Number in Testing Set: {len(X_test)}") #using len and f to print out the number of testing samples so it is more clear to the user than just the slider percentages. Also easier for the user to see how many in each 
 
         #Model options 
         #providing brief descriptions of the 3 models offered
         st.header("Selecting a Model")
         st.markdown("**Choose which machine learning model you would like to use. Below is a brief explanation of each model:**")
-        st.markdown("- **Decision Tree:** Can be used for classification and regression. In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion (or prediction in the case of regression) can be reached, represented by a leaf node, something with no more branches. **This decision tree model is for classification, and is therefore good if the target variable is categorical.**")
-        st.markdown("- **Linear Regression:** Can be used for linear relationships where the feature variables are numeric or categorical and the target is something on a continuous numeric scale. A linear regression model is helpful for evaluating a relationship between variables, for example, a one unit increase in y increases x by 15 points. **A good model choice is the target variable is numeric.**")
-        st.markdown("- **Logistic Regression:** Can be used with binary variables to evaluate how these features influence the probability of something happening. A logistic regression may be the best option if the goal is to see how each selected feature impact the outcome's probability. **A good model selection if the intended target variable is binary.**")
+        st.markdown("- **Decision Tree:** In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion can be reached, represented by a leaf node, a box with no branches. This means that no more splits can occur in the tree. **This decision tree model is for classification, and is therefore good if the target variable is categorical.**")
+        st.markdown("- **Linear Regression:** Can be used for linear relationships where the target is something on a continuous numeric scale, or a categorical numerical scale in some cases. A linear regression model is helpful for evaluating a relationship between variables, for example, a one unit increase in y increases x by 15 points. **A good model choice is the target variable is numeric.**")
+        st.markdown("- **Logistic Regression:** To evaluate the probability of the features influencing the target variable. The target variable should be categorical, while the features can be categorical or numeric. A logistic regression may be the best option if the goal is to see how each selected feature impacts the outcome's probability. **A good model selection if the intended target variable is binary.**")
         mlselect = st.selectbox("", ["Decision Tree", "Linear Regression", "Logistic Regression"]) #creating a selectbox so users can pick which model they want to use
 ##Decision tree
 #throughout the creation of the models, if, else and else if "elif" statements are used to make the code conditional on other parts. This is helpful since there are three model options to pick from 
         if mlselect == "Decision Tree": #if decision tree selected, this code will be run
             st.markdown("You've selected a decision tree. Below, you can adjust 3 hyperparameters. This decision tree model should be used for classification, please ***ensure you selected a categorical target variable***") #text that will appear once decision tree is selected as the model. Explaining that this is a classification decision tree so users select a categorical variable
             st.subheader("Hyperparameters") #header for the hyperparameters 
-            st.markdown("- **Maximum depth:** Changes how many levels the decision tree will have, with a smaller number meaning there will be fewer levels. ***Tip: It may be a good idea to set max depth to number of features involved***") #explaining the hyperparameters using markdown text
+            st.markdown("- **Maximum depth:** Changes how many levels the decision tree will have, with a smaller number meaning there will be fewer levels. ***Tip: It may be a good idea to set max depth to the number of features involved***") #explaining the hyperparameters using markdown text
             st.markdown("- **Minimum Samples to Split:** The minimum number of samples required to allow a split in node")  
             st.markdown("- **Criteria:** Will determine how splits are made in the tree. Entropy and the Gini Index are best for classification, whill log loss is recommended for binary probabilities")
             max_depth = st.slider("**Maximum Depth**", 1, 15, 5) #slider for selecting the max depth of DT
@@ -99,7 +101,7 @@ if df is not None:
             y_pred = dmodel.predict(X_test) #creating the y prediction
 #evaluating the model
             st.subheader("Metrics and Classification Report:") 
-            st.markdown("- **Accuracy:** Shows the percentage of correctly classified data at each split") #explaining what each of the key metrics shown mean 
+            st.markdown("- **Accuracy:** Shows the percentage of correctly classified data") #explaining what each of the key metrics shown mean 
             st.markdown("- **Precision:** Looks at the predicted positives, showing the percentage of how many ***predicted positives*** were actually positive as a decimal")
             st.markdown("- **Recall:** The true positive rate, showing how many of all the ***real positives*** were correctly identified by the model")
             st.markdown("- **F1 Score:** Balances the accuracy between precision and recall, mirrors the precision and recall scores, if they are high, the F1-score will be high. Measured on a scale from 0-1, a higher F1 score is better, and indicates the model is able to better predict true values, and minimized the false values.")
@@ -117,7 +119,7 @@ if df is not None:
             st.graphviz_chart(dot_data) #showing the chart
 #brief explanation of what the tree shows
             st.markdown("**The metrics shown include:**") #brief explanation of what visualization shows
-            st.markdown("- **Features:** Which features are being used to split. *Note: Putting a constaint on the depth is helpful so the program starts finding more efficient ways of predicting, otherwise doesn't take into account the other nodes.*")
+            st.markdown("- **Features:** Which features are being used to split. *Note: Putting a constraint on the depth is helpful so the program starts finding more efficient ways of predicting, otherwise doesn't take into account the other nodes.*")
             st.markdown("- **Samples:** The number of observations included in each node")
             st.markdown("- **Criteria:** Gini, Entropy, or Log loss, depending on which criteria was previously selected")
             st.markdown("- **Class:** The class distributions within each node")
@@ -157,13 +159,13 @@ if df is not None:
                  
                 st.subheader("Metrics and Classification Report:")
                 st.text(classification_report(y_test, y_pred)) #creating classification report 
-                st.markdown("- **Accuracy:** Shows the percentage of correctly classified data at each split")
+                st.markdown("- **Accuracy:** Shows the percentage of correctly classified data")
                 st.markdown("- **Precision:** Looks at the predicted positives, showing the percentage of how many ***predicted positives*** were actually positive as a decimal")
                 st.markdown("- **Recall:** The true positive rate, showing how many of all the ***real positives*** were correctly identified by the model")
                 st.markdown("- **F1 Score:** Balances the accuracy between precision and recall, mirrors the precision and recall scores, if they are high, the F1-score will be high. Measured on a scale from 0-1, a higher F1 score is better, and indicates the model is able to better predict true values, and minimized the false values.")
 ##confusion matrix creation
                 st.write("### Confusion Matrix") #title for confusion matrix section 
-                st.markdown("Evaluates performance by comparing predictions from the model to actual values. The key parts of the confusion matrix are the **true negatives** (located in the top left corner), and the **true positives** (located in the bottom right corner). These show the number of times the model correctly predicts something that is actually negative or actually positive.") #explaining what a confusion matrix is 
+                st.markdown("Evaluates performance by comparing predictions from the model to actual values. The key parts of the confusion matrix are the **true negatives** (located in the top left corner), and the **true positives** (located in the bottom right corner). These show the number of times the model correctly predicts something that is actually negative or actually positive. Higher numbers, in comparision to the other boxes, may indicate a better model performance. Comparing the number of true negatives and true positives can also help see which a model is better at predicting.") #explaining what a confusion matrix is 
                 cm = confusion_matrix(y_test, y_pred) #creating the confusion matrix
                 plt.figure(figsize=(6, 4)) ##then used matplotlib turn into a workable/ better looking confusion matrix
                 sns.heatmap(cm, annot=True, cmap="Blues") #cmap to change the color scheme
@@ -213,9 +215,9 @@ if df is not None:
 
             st.subheader("Linear Regression Metrics") #title for metrics section
             st.markdown(f"**Mean Squared Error (MSE): {mse:.2f}**") 
-            st.markdown("- The MSE shows the average squared difference between actual and predicted values, where a lower value means a better model.") #explaining mse
+            st.markdown("- The MSE shows the average squared difference between actual and predicted values, where a lower value generally means a better model.") #explaining mse
             st.markdown(f"**Root Mean Squared Error (RMSE): {rmse:.2f}**")
-            st.markdown("- The RMSE shows the difference between actual and predicted values, in the same units as the target, a lower value means a better model.") #explaining rmse
+            st.markdown("- The RMSE shows the difference between actual and predicted values, in the same units as the target, a lower value generally means a better model.") #explaining rmse
             st.markdown(f"**R² Score: {r2:.2f}**")
             st.markdown("- The R² score shows the proportion of variance that the model accounts for. On a scale from 0 - 1, a score closer to 1 indicates a model that better accounts for variance.") #explaining r squared
 
