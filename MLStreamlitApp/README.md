@@ -20,9 +20,8 @@ This script was written in Visual Studio code. The instructions below detail how
 
 **3.** Once these steps are completed, you will be able to run the code in your own VS code environment! 
 
-**Direct Link to the Deployed Version**
-To view the App without running the code, click here 
-
+## Direct Link to the Deployed Version
+To view the App without running the code, click [here](https://machinelearningappnkb.streamlit.app)
 
 
 ### 📚 Necessary Libraries and Versions
