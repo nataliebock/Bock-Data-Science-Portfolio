@@ -11,7 +11,7 @@ This portfolio showcases the assignments and projects created in a data science 
 - This Streamlit app allows users to evaluate and make predictions based on data through 3 different machine learning models: decision trees, logistic regression, and linear regression.
 - This project complements my portfoliio by demonstrating a more complex use of Streamlit, and the application of multiple machine learning models.
 - **Skills & Packages:** Python, Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Graphviz, Machine Learning, Decision Trees, Logistic Regression, and Linear Regression
-- **Link to App:** Click here to view
+- **Link to App:** Click [here to view](https://machinelearningappnkb.streamlit.app) 
 
 ## Data Cleaning Projects: 
 ### [Olympics Tidy Data Project](https://github.com/nataliebock/Bock-Data-Science-Portfolio/tree/main/TidyData-Project) 🥇 
