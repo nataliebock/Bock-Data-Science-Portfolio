@@ -80,7 +80,7 @@ streamlit==1.37.1
 ### Linear Regression 
 - **Purpose:**  Can be used for linear relationships where the target is something on a continuous numeric scale, or a categorical numerical scale in some cases. A linear regression model is helpful for evaluating a relationship between variables, for example, a one unit increase in y increases x by 15 points. A good model choice is the target variable is numeric.
 - **Scaled vs Unscaled:** The linear regression model also allows users to select whether they would like to use scaled or unscaled data. Using unscaled data can make it difficult to compare features measured in different units. By scaling the data, it becomes easier to draw comparisons across the different features.
-  - **What the scale prompt looks like in Streamlit**
+**The scale prompt in Streamlit is shown below ⬇️**
 <img width="339" alt="Screenshot 2025-04-14 at 6 48 36 PM" src="https://github.com/user-attachments/assets/7a1a450c-7073-4593-9845-b3398efab6ed" />
 
 - **Evaluation Metrics:** 
