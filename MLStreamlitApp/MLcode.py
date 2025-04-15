@@ -1,4 +1,6 @@
-##Importing necessary Packages
+##Machine Learning Streamlit App
+
+#Importing necessary Packages
 ##For me, it is helpful to do most separately so I can easily keep track of which packages and libraries are loaded. 
 import pandas as pd
 import streamlit as st
@@ -14,18 +16,20 @@ from sklearn.model_selection import train_test_split
 from sklearn import tree
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.metrics import roc_curve, roc_auc_score
+from sklearn.preprocessing import StandardScaler
+
 import graphviz
-# Creating a title
+# Creating a title for app and adding an explanation 
 st.title("Supervised Machine Learning App")
 st.markdown("Welcome to this Machine Learning App! To get started, select a sample dataset or upload your own CSV on the left side panel. You will then be shown a preview of the data, and can begin making choices about what type of model you would like to use. Some metrics for evaluation are shown, as well as some brief explanations of what different metrics show. For a more in depth understanding, you can view the reading materials linked on the connected Github README file.")
 
 ##Data
-#Uploading own dataset code
-st.sidebar.header("Upload or Choose a Dataset")
-uploaded_file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
-sam_data = st.sidebar.selectbox("Or choose a sample dataset", ["None", "Iris", "Titanic", "Penguins"])
+#Uploading user dataset code
+st.sidebar.header("Upload or Choose a Dataset") #adding it to the sidebar
+uploaded_file = st.sidebar.file_uploader("Upload CSV", type=["csv"]) #upload file as csv
+sam_data = st.sidebar.selectbox("Or choose a sample dataset", ["None", "Iris", "Titanic", "Penguins"]) #sample dataset options and default as none
 
-# Loading sample datasets and creating the options for datasets. First, if user uploads dataset, second is Iris dataset, third is Titanic dataset 
+# Loading sample datasets and creating the options for datasets. First, if user uploads dataset, second is Iris dataset, third is Titanic dataset, then penguins
 df = None
 if uploaded_file:
     df = pd.read_csv(uploaded_file) #If own dataset uploaded load this
@@ -33,18 +37,21 @@ if uploaded_file:
 elif sam_data == "Iris":
     df = sns.load_dataset("iris") #if Iris selected load this
     df = df[df["species"].isin(["setosa", "virginica"])] #changing the species to only have two options so it works with binary classification
-    df = pd.get_dummies(df, columns= df.select_dtypes(exclude=['number']).columns.tolist(), drop_first=True)
-    st.sidebar.markdown("**About Iris Dataset:** Contains information about Iris flowers, specifically their measurements.")
+    df = pd.get_dummies(df, columns= df.select_dtypes(exclude=['number']).columns.tolist(), drop_first=True) #same as with uploaded_file
+    st.sidebar.markdown("**About Iris Dataset:** Contains information about Iris flowers, specifically their measurements.") #adding brief info about data
+    st.sidebar.markdown("For more information click [here](https://www.kaggle.com/datasets/uciml/iris)") #adding hyperlink to more information about dataset
 elif sam_data == "Titanic":
     df = sns.load_dataset("titanic").dropna(axis=1)  #if titanic selected load this 
     df = pd.get_dummies(df, columns= df.select_dtypes(exclude=['number']).columns.tolist(), drop_first=True)
-    st.sidebar.markdown("**About Titanic Dataset:** Contains information about passengers on the Titanic, including their class, fare price, gender and whether they survived.")
+    st.sidebar.markdown("**About Titanic Dataset:** Contains information about passengers on the Titanic, including their class, fare price, gender and whether they survived.") #including brief info about the data 
+    st.sidebar.markdown("For more information click [here](https://www.kaggle.com/datasets/yasserh/titanic-dataset)")
 elif sam_data == "Penguins":
-    df = sns.load_dataset("penguins")
+    df = sns.load_dataset("penguins") 
     df = df[df["species"].isin(["Gentoo", "Chinstrap"])] #changing the species to only have two options so it works with binary classification
     df.dropna(inplace=True)
     df = pd.get_dummies(df, columns= df.select_dtypes(exclude=['number']).columns.tolist(), drop_first=True)
     st.sidebar.markdown("**About Penguins Dataset:** Contains information about Penguin species living on different islands.")
+    st.sidebar.markdown("For more information click [here](https://github.com/allisonhorst/palmerpenguins)")
 
 if df is not None:
     st.write("**Preview of Dataset**", df.head()) #show a preview of df selected 
@@ -65,14 +72,14 @@ if df is not None:
         #providing brief descriptions of the 3 models offered
         st.header("Selecting a Model")
         st.markdown("**Choose which machine learning model you would like to use. Below is a brief explanation of each model:**")
-        st.markdown("- **Decision Tree:** Can be used for classification and regression. In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion (or prediction in the case of regression) can be reached, represented by a leaf node, something with no more branches. ***Select a categorical target variable***")
-        st.markdown("- **Linear Regression:** Can be used for linear relationships where the feature variables are numeric or categorical and the target is something on a continuous numeric scale. A linear regression model is helpful for evaluating a relationship between variables. ***Select a target variable that is on a continuous numeric scale***")
-        st.markdown("- **Logistic Regression:** Can be used with binary variables to evaluate how these features influence the probability of something happening. A logistic regression may be the best option if the goal is to see how each selected feature impact the outcome's probability. ***Select a binary target column***")
+        st.markdown("- **Decision Tree:** Can be used for classification and regression. In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion (or prediction in the case of regression) can be reached, represented by a leaf node, something with no more branches. **This decision tree model is for classification, and is therefore good if the target variable is categorical.**")
+        st.markdown("- **Linear Regression:** Can be used for linear relationships where the feature variables are numeric or categorical and the target is something on a continuous numeric scale. A linear regression model is helpful for evaluating a relationship between variables, for example, a one unit increase in y increases x by 15 points. **A good model choice is the target variable is numeric.**")
+        st.markdown("- **Logistic Regression:** Can be used with binary variables to evaluate how these features influence the probability of something happening. A logistic regression may be the best option if the goal is to see how each selected feature impact the outcome's probability. **A good model selection if the intended target variable is binary.**")
         mlselect = st.selectbox("", ["Decision Tree", "Linear Regression", "Logistic Regression"]) #creating a selectbox so users can pick which model they want to use
 ##Decision tree
 #throughout the creation of the models, if, else and else if "elif" statements are used to make the code conditional on other parts. This is helpful since there are three model options to pick from 
         if mlselect == "Decision Tree": #if decision tree selected, this code will be run
-            st.markdown("You've selected a decision tree. Below, you can adjust the max depth and criteria. This decision tree model should be used for classification, please select a **categorical column as the target**") #text that will appear once decision tree is selected as the model. Explaining that this is a classification decision tree so users select a categorical variable
+            st.markdown("You've selected a decision tree. Below, you can adjust 3 hyperparameters. This decision tree model should be used for classification, please ***ensure you selected a categorical target variable***") #text that will appear once decision tree is selected as the model. Explaining that this is a classification decision tree so users select a categorical variable
             st.subheader("Hyperparameters") #header for the hyperparameters 
             st.markdown("- **Maximum depth:** Changes how many levels the decision tree will have, with a smaller number meaning there will be fewer levels. ***Tip: It may be a good idea to set max depth to number of features involved***") #explaining the hyperparameters using markdown text
             st.markdown("- **Minimum Samples to Split:** The minimum number of samples required to allow a split in node")  
@@ -126,7 +133,7 @@ if df is not None:
                 st.write(f"**ROC Curve AUC Score: {roc_auc:.2f}**") #writing the AUC score created 
                 #Plotting using mat lib
                 plt.figure(figsize=(8, 6))
-                plt.plot(fpr, tpr, label=f'ROC Curve (AUC = {roc_auc:.2f})')
+                plt.plot(fpr, tpr, label=f'ROC Curve (AUC = {roc_auc:.2f})') #label with the AUC score code showing written previously
                 plt.plot([0, 1], [0, 1], linestyle="--", color='gray')
                 plt.xlabel("False Positive Rate") #label
                 plt.ylabel("True Positive Rate") #label
@@ -138,9 +145,9 @@ if df is not None:
 # Initializing and training model
         elif mlselect == "Logistic Regression":
             if len(np.unique(y)) != 2: #means that if the unique values are not equal to 2/ is not binary, print out this message because logistic regression will only work with binary target variables. Here, i am using np.unique(y) as a function to count the number of unique values 
-                st.error("Logistic Regression only works with a binary target. Select a target column with only 2 unique values.") #creating an error message so users understand why it won't work if not binary
+                st.error("Logistic Regression only works with a binary target. Please select a **binary target variable**.") #creating an error message so users understand why it won't work if not binary
             else:
-                st.markdown("You've selected Logistic regression, please select a **binary categorical column as the target.**") #what will appear when selecting logistic regression
+                st.markdown("You've selected Logistic regression, please ensure you selected a ***binary target column***") #what will appear when selecting logistic regression
                 lormodel = LogisticRegression() #creating the logistic regression model
                 lormodel.fit(X_train, y_train)
                 y_pred = lormodel.predict(X_test) #predict on test data
@@ -174,6 +181,7 @@ if df is not None:
                 roc_auc = roc_auc_score(y_test, y_probs) #so only if binary
                 st.write(f"**ROC Curve AUC Score: {roc_auc:.2f}**") #writing the roc auc score
             #Plotting
+            ##same as in decision tree
                 plt.figure(figsize=(8, 6))
                 plt.plot(fpr, tpr, label=f'ROC Curve (AUC = {roc_auc:.2f})')
                 plt.plot([0, 1], [0, 1], linestyle="--", color='gray')
@@ -183,8 +191,17 @@ if df is not None:
                 plt.legend(loc="lower right")
                 st.pyplot(plt)
 #Linear Regression
-        elif mlselect == "Linear Regression":
-            st.markdown("You've selected linear regression, please select a **continuous numeric target column** and view the metrics below.")
+        elif mlselect == "Linear Regression": #if linear regression selected 
+            st.markdown("You've selected linear regression, please ensure you selected a ***target variable that is on a continuous numeric scale*** before choosing a scaling option, and viewing the metrics below.")
+            st.subheader("Scaling")
+            st.markdown("- Using unscaled data can make it difficult to compare features measured in different units. By scaling the data, it becomes easier to draw comparisons across the different features.")
+            st.markdown("- If scaled, and making comparisions across features, a larger coefficient indicates a larger impact on the target variable.")
+            st.markdown("- If the features are already in the same units, scaling may be unnecessary. It is important to consider what is necessary for your data, and your objectives.")
+            app_scale = st.radio("**Select whether you would like to scale the model**", ["Unscaled", "Scaled"]) #giving users the option to pick between scaled and unscaled through radio prompt with a circle for each option
+            if app_scale == "Scaled": #if scaled, apply scaler 
+                scaler = StandardScaler() #using standardscaler 
+                X_train = scaler.fit_transform(X_train) #applying scaler to X_Train
+                X_test = scaler.transform(X_test) #applying scaler to X_test
             #fitting and training the model
             linmodel = LinearRegression()
             linmodel.fit(X_train, y_train) 
@@ -200,10 +217,10 @@ if df is not None:
             st.markdown(f"**Root Mean Squared Error (RMSE): {rmse:.2f}**")
             st.markdown("- The RMSE shows the difference between actual and predicted values, in the same units as the target, a lower value means a better model.") #explaining rmse
             st.markdown(f"**R² Score: {r2:.2f}**")
-            st.markdown("- The R² score shows the proportion of variance that the model accounts for. On a scale from 0 - 1, a score closer to 1 indictates a model that better accounts for variance.") #explaining r squared
+            st.markdown("- The R² score shows the proportion of variance that the model accounts for. On a scale from 0 - 1, a score closer to 1 indicates a model that better accounts for variance.") #explaining r squared
 
 
-##Scaled vs unscaled? How to account for this? Confused in general? 
+
 
 
 
