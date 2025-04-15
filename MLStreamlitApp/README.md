@@ -1,7 +1,7 @@
 # Machine Learning Streamlit App 
 
 ## 📕 Project Overview 
-#### This interactive Streamlit app allows users to use 3 different models (decision trees, linear regression and logistic regression) to evaluate data. [3 sample datasets](#References) are loaded, but users also have the option to upload their own dataset as a CSV. Users can evaluate model performance by viewing various [metrics](#-App-Features) depending on what model is selected. 
+#### This interactive Streamlit app allows users to use 3 different models (decision trees, linear regression and logistic regression) to evaluate data. 3 sample datasets are loaded, but users also have the option to upload their own dataset as a CSV. Users can evaluate model performance by viewing various [metrics](#-App-Features) depending on what model is selected. 
 - **Project Goal:** Demonstrate the ability to create an interactive Streamlit app that showcases the pros and cons of different machine learning models for evaluation and prediction. 
 - **Skills and Packages Applied:** Python, Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Graphviz, Machine Learning, Decision Trees, Logistic Regression, and Linear Regression
 
@@ -62,7 +62,8 @@ streamlit==1.37.1
 ## 📲 App Features  
 ****The app features 3 model types: Decision Trees, Logistic Regression, and Linear Regression. A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.****
 ### Decision Trees
-- **Purpose:** Can be used for classification and regression. In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion (or prediction in the case of regression) can be reached, represented by a leaf node, something with no more branches
+- **Purpose:** Can be used for classification and regression.In simple terms, a decision tree outlines options based on whether a binary variable is true or false. Each answer leads to a lower level where the process is repeated, until a conclusion can be reached (or prediction in the case of regression), represented by a leaf node, a box with no branches. This means that no more splits can occur in the tree. This decision tree model used is for classification, and is therefore good if the target variable is categorical.
+  
 **Hyperparameters:** The hyperparameters used in this Streamlit are depicted and described below. 
 <img width="794" alt="Screenshot 2025-04-13 at 11 20 46 AM" src="https://github.com/user-attachments/assets/9f2da996-c7cf-49ab-9448-aa60cefbbb9c" />
 
@@ -78,7 +79,7 @@ streamlit==1.37.1
   - ***Log loss:*** An evaluation metric for binary classification models. <ins>Lower log loss = predicted probabilities are more accurate in the model</ins>
 
 ### Linear Regression 
-- **Purpose:** Can be used for linear relationships where the feature variables are numeric or categorical and the target is something on a continuous numeric scale. A linear regression model is helpful for evaluating a relationship to a numeric variable. For example, a one unit increase in y increases x by 15 points.
+- **Purpose:**  Can be used for linear relationships where the target is something on a continuous numeric scale, or a categorical numerical scale in some cases. A linear regression model is helpful for evaluating a relationship between variables, for example, a one unit increase in y increases x by 15 points. A good model choice is the target variable is numeric.
 - **Scaled vs Unscaled:** The linear regression model also allows users to select whether they would like to use scaled or unscaled data. Using unscaled data can make it difficult to compare features measured in different units. By scaling the data, it becomes easier to draw comparisons across the different features.
   - **What the scale prompt looks like in Streamlit**
 <img width="339" alt="Screenshot 2025-04-14 at 6 48 36 PM" src="https://github.com/user-attachments/assets/7a1a450c-7073-4593-9845-b3398efab6ed" />
@@ -89,7 +90,7 @@ streamlit==1.37.1
   - ***R² Score:*** Shows the proportion of variance that the model accounts for. On a scale from 0 - 1, a score closer to 1 indicates a model that better accounts for variance
 
 ### Logistic Regression 
-- **Purpose:** Can be used with a binary target variable and numeric features to evaluate the probability of something happening. A logisitc regression may be the best option if the goal is to see how the selected features impact the outcome's probability.
+- **Purpose:** To evaluate the probability of the features influencing the target variable. The target variable should be categorical, while the features can be categorical or numeric. A good model selection if the intended target variable is binary.
 - **Evaluation metrics:**
   - ***Classification report:*** displaying accuracy, precision, recall, and F1-score
   - ***Confusion matrix:*** Evaluates performance by comparing predictions from the model to actual values. The key parts of the confusion matrix are the true negatives (located in the top left corner), and the true positives (located in the bottom right corner). These show the number of times the model correctly predicts something that is actually negative or actually positive.
@@ -103,6 +104,8 @@ streamlit==1.37.1
 [Linear Regression Inspiration](https://github.com/matejve/linear_regression_demo/blob/main/Introduction_Page.py)
 [Other Streamlit App Inspiration](https://varunlobo-decision-tree-using-streamlit-main-myvzpw.streamlit.app/)
 [Links to different Readme sections](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
+
+**Learn More About the Sample Datasets**
 [Penguins Sample Dataset](https://github.com/allisonhorst/palmerpenguins)
 [Titanic Sample Dataset](https://www.kaggle.com/datasets/yasserh/titanic-dataset)
 [Iris Sample Dataset](https://www.kaggle.com/datasets/uciml/iris)
