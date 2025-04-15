@@ -1,7 +1,7 @@
 # Machine Learning Streamlit App 
 
 ## 📕 Project Overview 
-#### This interactive Streamlit app allows users to use 3 different models (decision trees, linear regression and logistic regression) to evaluate data. 3 sample datasets are loaded, but users also have the option to upload their own dataset as a CSV. Users can evaluate model performance by viewing various [metrics](#-App-Features) depending on what model is selected. 
+#### This interactive Streamlit app allows users to use 3 different models (decision trees, linear regression and logistic regression) to evaluate data. 3 [sample datasets](#-References) are loaded, but users also have the option to upload their own dataset as a CSV. Users can evaluate model performance by viewing various [metrics](#-App-Features) depending on what model is selected. 
 - **Project Goal:** Demonstrate the ability to create an interactive Streamlit app that showcases the pros and cons of different machine learning models for evaluation and prediction. 
 - **Skills and Packages Applied:** Python, Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Graphviz, Machine Learning, Decision Trees, Logistic Regression, and Linear Regression
 
@@ -103,7 +103,9 @@ streamlit==1.37.1
 [Linear Regression Inspiration](https://github.com/matejve/linear_regression_demo/blob/main/Introduction_Page.py)
 [Other Streamlit App Inspiration](https://varunlobo-decision-tree-using-streamlit-main-myvzpw.streamlit.app/)
 [Links to different Readme sections](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
-
+[Penguins Sample Dataset](https://github.com/allisonhorst/palmerpenguins)
+[Titanic Sample Dataset](https://www.kaggle.com/datasets/yasserh/titanic-dataset)
+[Iris Sample Dataset](https://www.kaggle.com/datasets/uciml/iris)
 
 **Learn More About the Model Types:**
 [Grokking Machine Learning](https://www.google.com/books/edition/Grokking_Machine_Learning/X-9MEAAAQBAJ?hl=en&gbpv=1&pg=PA1&printsec=frontcover) 
