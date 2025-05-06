@@ -11,7 +11,11 @@
 import pandas as pd
 import streamlit as st
 ````
-
+**Below are the versions of the libraries used in this app:**
+````
+pandas==2.2.3
+seaborn==0.13.2
+````
 **2.** Run Streamlit in your terminal and open the prompted link to view the app. For more detailed instructions on this setup, click [here](https://docs.kanaries.net/topics/Streamlit/streamlit-vscode)
 
 
@@ -19,13 +23,6 @@ import streamlit as st
 
 **Note:** In order to use this Streamlit app, the Python file must be downloaded and Streamlit must be used to create personal url. 
 
-### Versions 
-Below are the listed versions of the libraries used in this app:
-````
-pandas==2.2.3
-scikit_learn==1.6.1
-seaborn==0.13.2
-````
 ## 📲 App Features
 - **Button:** A simple button in Streamlit to click to emphasize excitement for using the app and practice displaying text
 - **Species Selection:** Allows the user to select different species of penguins to study
