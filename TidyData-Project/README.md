@@ -1,6 +1,6 @@
 # Tidy Data Project 
 ## 🧑‍🏫Project Overview  
-- For this project, I tidied and used a dataset on the 2008 Summer Olympics. The source where the untidy data was adapted from is linked below under [References](#-References).
+- For this project, I tidied and used a dataset on the 2008 Summer Olympics. The source where the untidy data was adapted from is linked below under [References](references).
 - **Project goal:** The goal of this project was to demonstrat the ability to clean an untidy dataset using the principles of tidy data and begin to analyze the data through exploratory data analysis and data visualization. 
 - **Skills:** Python, Pandas, Numpy, Seaborn, data cleaning, and data visualization.
 
