@@ -11,7 +11,7 @@
 import pandas as pd
 import streamlit as st
 ````
-**Below are the versions of the libraries used in this app:**
+Below are the versions of the libraries used in this app:
 ````
 pandas==2.2.3
 seaborn==0.13.2
@@ -31,4 +31,6 @@ seaborn==0.13.2
 ## About the Data
 - This app uses a Seaborn dataset about different penguin species, where users can look at features like weight, flipper and bill length, and island of residence.
 - To learn more about the dataset used, click [here](https://github.com/allisonhorst/palmerpenguins)
+
+## 📸 Visual Examples 
 
