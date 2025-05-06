@@ -31,11 +31,11 @@ To view the App without running the code, click ...ADD LINK....
 
 ## ℹ️ References 
 [Installing Graphviz](https://anaconda.org/conda-forge/python-graphviz)
-[Logisitic Regression Inspiration](https://github.com/ragh945/tuning-of-hyperparameters-for-logisticregression_using-decision-surfaces/blob/main/Hyperparameters.py)
-[Linear Regression Inspiration](https://github.com/matejve/linear_regression_demo/blob/main/Introduction_Page.py)
-[Other Streamlit App Inspiration](https://varunlobo-decision-tree-using-streamlit-main-myvzpw.streamlit.app/)
+[Streamlit App Inspiration for Machine Learning](https://varunlobo-decision-tree-using-streamlit-main-myvzpw.streamlit.app/)
+[Streamlit App Format Inspiration](https://github.com/dataprofessor/dp-machinelearning/blob/master/streamlit_app.py)
 [Links to different Readme sections](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 [Learn About PCA](https://www.turing.com/kb/guide-to-principal-component-analysis#what-is-pca?)
+
 
 
 **Learn More About the Sample Datasets**
