@@ -1,7 +1,7 @@
-# This is a basic Streamlit app that reads data and has interactive widgets in Streamlit.
+# Penguin Streamlit App
+
 ## 📕 Project Overview: 
-**In this introductory Streamlit app, you can look at penguins based on their species, island location, body mass, and flipper length by interacting with various widgets**
-- The Streamlit widgets used are: a simple button with text display, select boxes to view based on species and island, and a slider to look at penguins based on flipper length and body mass.
+**This is a basic Streamlit app that reads data and has interactive widgets in Streamlit. In this introductory Streamlit app, you can look at penguins based on their species, island location, body mass, and flipper length by interacting with various widgets**
 
 ## 📖 Instructions 
 
@@ -21,7 +21,7 @@ import streamlit as st
 **Note:** In order to use this Streamlit app, the Python file must be downloaded and Streamlit must be used to create personal url. 
 
 ## 📲 App Features
-- **Button:** A simple button in Streamlit to click to emphasize excitement for using the app
+- **Button:** A simple button in Streamlit to click to emphasize excitement for using the app and practice displaying text
 - **Species Selection:** Allows the user to select different species of penguins to study
 - **Sliders:** Allow the user to subset the penguin species based on mass, flipper and bill length
   
