@@ -54,8 +54,7 @@ To view the App without running the code, click ...ADD LINK....
 [Streamlit App Format Inspiration](https://github.com/dataprofessor/dp-machinelearning/blob/master/streamlit_app.py)
 [Links to different Readme sections](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 [Learn About PCA](https://www.turing.com/kb/guide-to-principal-component-analysis#what-is-pca?)
-
-
+[Learn About Hierarchical Clustering](https://www.datacamp.com/tutorial/introduction-hierarchical-clustering-python)
 
 **Learn More About the Sample Datasets**
 [Penguins Sample Dataset](https://github.com/allisonhorst/palmerpenguins)
