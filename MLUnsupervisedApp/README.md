@@ -26,6 +26,14 @@ This script was written in Visual Studio code. The instructions below detail how
 ### 🔗 Direct Link to the Deployed Version 
 To view the App without running the code, click ...ADD LINK....
 
+### 📚 Necessary Libraries and Versions 
+- **necessary libraries and packages:** Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, and Graphviz
+ - For more specifics, view the code below:
+````
+
+````
+- ***Note:*** Graphviz must also be Conda installed in Visual Studio code. For installation instructions, click [here](https://anaconda.org/conda-forge/python-graphviz)
+  
 ## 📲 App Features  
 **The app features 3 model types: K-means Clustering, Hierarchical Clustering, and Principal Component Analysis (PCA). A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.**
 **Scaled vs Unscaled**
