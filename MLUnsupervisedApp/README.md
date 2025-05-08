@@ -64,6 +64,7 @@ from sklearn.cluster import AgglomerativeClustering
 - **Purpose:** Hierarchical clustering is also a type of clustering. This method is unique in that it creates a hierarchical tree of clusters, where more complicated clustering relationships can be seen. Hierarchical clustering also differs from K-means because there is no fixed k, meaning the data clusters can be of varying sizes. The tree can also be seen ***before*** determining the number of clusters, allowing for more informed analysis.
 - **Choices for Dendrogram:** The interactive widgets created for altering the dendrogram are depicted and described below
 <img width="774" alt="Screenshot 2025-05-08 at 11 41 26 AM" src="https://github.com/user-attachments/assets/b142596f-fe9c-40f7-acfd-e151bd038da2" />
+
    - ***Linkage***: Linkage provides different ways to measure clusters before merging. Users are given the option of selecting one of the four linkage types described below:
      - *Complete:* When comparing two clusters, the complete linkage option will look for *maximum distance between two points, one in each cluster. The drawback for complete linkage is a strong influence of outliers since it relies on maximum distances.
      - *Average:* When comparing two clusters, the average linkage option will calculate the average for every pair of points in the clusters.
