@@ -93,6 +93,9 @@ from sklearn.cluster import AgglomerativeClustering
 - **An example of a Silhouette Score graph made using K-means clustering**
 <img width="745" alt="Screenshot 2025-05-08 at 10 52 21 AM" src="https://github.com/user-attachments/assets/dccdd554-232f-40d7-9ad7-dae07538c62e" />
 
+- **An example of a of the Hierarchical Clustering visualization using PCA for dimensionality reduction for plotting in 2D. In this example, the user selected 3 clusters**
+ <img width="748" alt="Screenshot 2025-05-08 at 12 06 29 PM" src="https://github.com/user-attachments/assets/ff1f6e20-d6bf-43e3-8d27-afed8683d436" />
+
 - **An example of a Dendrogram made using Hierarchical clustering. Here, the user selected the complete linkage option and chose to truncate.**
 <img width="760" alt="Screenshot 2025-05-08 at 12 02 04 PM" src="https://github.com/user-attachments/assets/3a976c3a-8a33-45f6-bb0e-8ea581eeb8bd" />
 
