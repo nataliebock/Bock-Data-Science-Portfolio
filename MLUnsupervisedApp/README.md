@@ -62,6 +62,11 @@ from sklearn.cluster import AgglomerativeClustering
 
 ### Hierarchical Clustering
 - **Purpose:** Hierarchical clustering is also a type of clustering. This method is unique in that it creates a hierarchical tree of clusters, where more complicated clustering relationships can be seen. Hierarchical clustering also differs from K-means because there is no fixed k, meaning the data clusters can be of varying sizes. The tree can also be seen ***before*** determining the number of clusters, allowing for more informed analysis.
+
+<img width="774" alt="Screenshot 2025-05-08 at 11 41 26 AM" src="https://github.com/user-attachments/assets/b142596f-fe9c-40f7-acfd-e151bd038da2" />
+
+
+
 ### Principal Component Analysis (PCA)
 - **Purpose:** PCA is a type of dimensionality reduction unsupervised learning model. Essentially PCA and dimensionality reduction broadly **reduces the number of columns, or features,** with the goal of simplifying the data without losing too much information. If you want to simplify your dimensions, this model will be helpful.
 
