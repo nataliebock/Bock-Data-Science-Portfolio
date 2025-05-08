@@ -1,7 +1,3 @@
-App Features: Explain the models you used and describe how hyperparameters are selected or tuned.
-References: Include links to documentation, tutorials, or guides that informed your implementation.
-Visual Examples: Consider adding screenshots of the app or charts produced by the app.
-
 # Unsupervised Machine Learning App 
 ## Project Overview
 This Streamlit app encourages users to interact with different widgets in order to evaluate data with different unsupervised learning techniques (K-means Clustering, Hierarchical Clustering and Principal Component Analysis). The app features sample datasets, but also allows the user to upload their own CSV file. Users can use this app for exploratory data analysis, and can evaluate the model performances through different [metrics](#-App-Features).
