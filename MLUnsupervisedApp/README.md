@@ -57,9 +57,9 @@ from sklearn.cluster import AgglomerativeClustering
 - **Purpose:** K-means is a type of clustering that groups observations, the information provided in the rows of datasets, into clusters based on finding the best centroid positions. K-means and clustering generally is helpful for finding patterns and creating groups in the data.
 - **Clusters:** Users are shown a sliding scale from 2 to 10 where they can select a number of clusters. Clusters are helpful for finding groups in the data, especially since it is unlabeled, and the model will then determine the best centroids for the selected number of groups. Based on the user's selection, a plot using PCA to reduce the number of dimensions to 2 for easy visualization is then created.
 - **Evaluation:** To help the user evaluate what the optimal number of clusters is, visualizations are created showing the silhouette score and elbow method. ***Note*** while the Silhouette score is less subjective, there is no perfect metric, instead multiple metrics should be considered. Especially since unsupervised learning is part of exploratory data analysis, it is important to test different options and see which is best.
- - ***Silhouette Score:***
- - ***Elbow Method:***
- - 
+  - ***Silhouette Score:*** Evaluates the clustering results, with a ***higher score meaning a better clustering.*** This is accomplished by determining how well each point fits the assigned cluster in comparison to the others, and an average silhouette score of each k (number of clusters) is displayed.
+  - ***Elbow Method:*** Evaluates the clustering results by plotting the within-cluster sum of squares and the number of clusters. In this case, the best number of clusters is identified by the ***elbow point***, where the decrease in WCSS flattens, or diminishes.
+
 ### Hierarchical Clustering
 - **Purpose:** Hierarchical clustering is also a type of clustering. This method is unique in that it creates a hierarchical tree of clusters, where more complicated clustering relationships can be seen. Hierarchical clustering also differs from K-means because there is no fixed k, meaning the data clusters can be of varying sizes. The tree can also be seen ***before*** determining the number of clusters, allowing for more informed analysis.
 ### Principal Component Analysis (PCA)
@@ -76,8 +76,14 @@ from sklearn.cluster import AgglomerativeClustering
 [Links to different Readme sections](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 [Learn About PCA](https://www.turing.com/kb/guide-to-principal-component-analysis#what-is-pca?)
 [Learn About Hierarchical Clustering](https://www.datacamp.com/tutorial/introduction-hierarchical-clustering-python)
+[Hierarchical Clustering, especially linkage](https://r.qcbs.ca/workshop09/book-en/clustering.html)
 
 **Learn More About the Sample Datasets**
 [Penguins Sample Dataset](https://github.com/allisonhorst/palmerpenguins)
 [Titanic Sample Dataset](https://www.kaggle.com/datasets/yasserh/titanic-dataset)
 [Iris Sample Dataset](https://www.kaggle.com/datasets/uciml/iris)
+[Breast Cancer Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html)
+
+## Visual Examples 
+- **An example of a Silhouette Score graph made using K-means clustering**
+<img width="745" alt="Screenshot 2025-05-08 at 10 52 21 AM" src="https://github.com/user-attachments/assets/dccdd554-232f-40d7-9ad7-dae07538c62e" />
