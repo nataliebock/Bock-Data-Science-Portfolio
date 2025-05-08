@@ -76,7 +76,7 @@ from sklearn.cluster import AgglomerativeClustering
     - ***Silhouette Score:*** Evaluates the clustering results, with a ***higher score meaning a better clustering.*** This is accomplished by determining how well each point fits the assigned cluster in comparison to the others, and an average silhouette score of each k (number of clusters) is displayed.
 
 ### Principal Component Analysis (PCA)
-- **Purpose:** PCA is a type of dimensionality reduction unsupervised learning model. Essentially PCA and dimensionality reduction broadly **reduces the number of columns, or features,** with the goal of simplifying the data without losing too much information. If you want to simplify your dimensions, this model will be helpful.
+- **Purpose:** PCA is a type of dimensionality reduction unsupervised learning model. Essentially PCA and dimensionality reduction broadly reduces the number of columns, or features, with the goal of simplifying the data without losing too much information. If you want to simplify the number of features in a dataset, this model will be helpful.
 - **Number of Components**: Users are shown a sliding scale from 2 to 10 where they can select a number of components they would like to use.
 - **Evaluation**: To evaluate the PCA, users are shown an explained variance plot that features individual and cumulative variance.
    - ***Cumulative***: The cumulative variance explains uses the elbow method to determine the ideal number of components. The elbow method evaluates by plotting the within-cluster sum of squares. In this case, the best number of clusters is identified by the elbow point, where the decrease in WCSS flattens, or diminishes.
