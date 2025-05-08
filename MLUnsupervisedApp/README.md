@@ -72,13 +72,16 @@ from sklearn.cluster import AgglomerativeClustering
 - ***Truncation***: Users can choose to truncate the dendrogram, which will group things together at a higher level and create simpler dendrogram.
 - **Clusters:** Users are then given the option to select a number of clusters between 1 and 10 to create a visualization of the clusters using PCA to reduce the number of dimensions *only for visualization.*
 
-**Evaluation:** To help the user evaluate what the optimal number of clusters is, a visualization is created showing the silhouette score.
-  - ***Silhouette Score:*** Evaluates the clustering results, with a ***higher score meaning a better clustering.*** This is accomplished by determining how well each point fits the assigned cluster in comparison to the others, and an average silhouette score of each k (number of clusters) is displayed.
+- **Evaluation:** To help the user evaluate what the optimal number of clusters is, a visualization is created showing the silhouette score.
+    - ***Silhouette Score:*** Evaluates the clustering results, with a ***higher score meaning a better clustering.*** This is accomplished by determining how well each point fits the assigned cluster in comparison to the others, and an average silhouette score of each k (number of clusters) is displayed.
 
 ### Principal Component Analysis (PCA)
 - **Purpose:** PCA is a type of dimensionality reduction unsupervised learning model. Essentially PCA and dimensionality reduction broadly **reduces the number of columns, or features,** with the goal of simplifying the data without losing too much information. If you want to simplify your dimensions, this model will be helpful.
 - **Number of Components**: Users are shown a sliding scale from 2 to 10 where they can select a number of components they would like to use.
-  
+- **Evaluation**: To evaluate the PCA, users are shown an explained variance plot that features individual and cumulative variance.
+   - ***Cumulative***: The cumulative variance explains uses the elbow method to determine the ideal number of components. The elbow method evaluates by plotting the within-cluster sum of squares. In this case, the best number of clusters is identified by the elbow point, where the decrease in WCSS flattens, or diminishes.
+The bars below shows the individual variance explained, showing the variance that each separate component is able to explain. This is helpful for determining which components to use for further analysis.
+   - ***Individual***: The individual variance explained shows the variance that each separate component is able to explain. This is helpful for determining which components to use for further analysis.
 #### Scaled vs Unscaled
 - For each model option, the user is given the choice between scaling the data, or leaving the data unscaled. Using unscaled data can make it difficult to compare features measured in different units. By scaling the data, it becomes easier to draw comparisons across the different features. Scaling for all three model types is important, with the reasoning being described in depth in the app. While scaling is strongly encouraged for each model, offering the choice can help users see *why* scaling is so important in most cases, and make the app work in a case where unscaled data is necessary. 
   
