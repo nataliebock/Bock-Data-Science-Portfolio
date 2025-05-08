@@ -16,8 +16,8 @@ This portfolio showcases the assignments and projects created in a data science 
 ### [Unsupervised Machine Learning App](https://github.com/nataliebock/Bock-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)💡 
 - This Streamlit app encourages users to explore data through the use of 3 different unsupervised machine learning models: K-means clustering, hierarchical clustering, and principal component analysis.
 - This project complements my portfolio by continuing to demonstrate a more complex use of Streamlit, and an understanding of unsupervised machine learning models.
-- **Skills & Packages:**
-- **Link to App:**
+- **Skills & Packages:** Python, Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Unsupervised Machine Learning, K-means, Hierarchical Clustering, and Principal Component Analysis
+- **Link to App:** [Click here to view](https://unsupervisedmachinelearningappnkb.streamlit.app)
 
 ## Data Cleaning Projects: 
 ### [Olympics Tidy Data Project](https://github.com/nataliebock/Bock-Data-Science-Portfolio/tree/main/TidyData-Project) 🥇 
