@@ -2,7 +2,7 @@
 ## Project Overview
 This Streamlit app encourages users to interact with different widgets in order to evaluate data with different unsupervised learning techniques (K-means Clustering, Hierarchical Clustering and Principal Component Analysis). The app features sample datasets, but also allows the user to upload their own CSV file. Users can use this app for exploratory data analysis, and can evaluate the model performances through different [metrics](#-App-Features).
 - **Project goal:** The goal of this project is to demonstrate an improved use of Streamlit, while also showing an understanding of unsupervised machine learning and the pros and cons of the 3 featured models. 
-- **Skills:** 
+- **Skills:** Python, Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Unsupervised Machine Learning, K-means, Hierarchical Clustering, and Principal Component Analysis
 ## 📖 Instructions 
 This script was written in Visual Studio code. The instructions below detail how to run the code using this platform.
 
@@ -44,6 +44,7 @@ from sklearn.cluster import AgglomerativeClustering
 - ***Note:*** Graphviz must also be Conda installed in Visual Studio code. For installation instructions, click [here](https://anaconda.org/conda-forge/python-graphviz)
 
 **Versions**
+Below are the listed versions of the packages and libraries used in this app:
 ````
 graphviz==0.20.3
 matplotlib==3.10.1
