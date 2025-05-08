@@ -41,7 +41,6 @@ from sklearn.decomposition import PCA
 from scipy.cluster.hierarchy import linkage, dendrogram
 from sklearn.cluster import AgglomerativeClustering 
 ````
-- ***Note:*** Graphviz must also be Conda installed in Visual Studio code. For installation instructions, click [here](https://anaconda.org/conda-forge/python-graphviz)
 
 **Versions**
 Below are the listed versions of the packages and libraries used in this app:
