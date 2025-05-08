@@ -30,4 +30,10 @@ This portfolio showcases the assignments and projects created in a data science 
 - **An example from the [Unsupervised Machine Learning App](https://github.com/nataliebock/Bock-Data-Science-Portfolio/tree/main/MLUnsupervisedApp) of the K-Means Clustering visualization created using PCA for dimensionality reduction. In this example, the user selected 9 clusters**
 <img width="747" alt="Screenshot 2025-05-08 at 10 56 37 AM" src="https://github.com/user-attachments/assets/422cb641-e63b-4f1a-a220-525a5a9db8cc" />
 
+- **An example from the [Machine Learning App](https://github.com/nataliebock/Bock-Data-Science-Portfolio/tree/main/MLStreamlitApp) of a decision tree created**
+<img width="1045" alt="Screenshot 2025-05-08 at 7 50 19 PM" src="https://github.com/user-attachments/assets/c47a02f8-8efd-47da-84bf-4df8639810e8" />
+
+- **An example from [Olympics Tidy Data Project](https://github.com/nataliebock/Bock-Data-Science-Portfolio/tree/main/TidyData-Project) of a bar plot made showing the number and type of medals won in different water events**
+<img width="1034" alt="Screenshot 2025-05-08 at 7 47 25 PM" src="https://github.com/user-attachments/assets/4d2404ce-b4f1-4c93-8f14-65faad367b5a" />
+
 
