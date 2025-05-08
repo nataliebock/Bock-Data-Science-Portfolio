@@ -27,7 +27,7 @@ This portfolio showcases the assignments and projects created in a data science 
 - **Skills & Packages :** Python, Pandas, Numpy, Seaborn, Matplotlib, data cleaning, and data visualization.
 
 ## Visualizations 📸 
-- **An example of the K-Means Clustering visualization created using PCA for dimensionality reduction. In this example, the user selected 9 clusters**
+- **An example from the [Unsupervised Machine Learning App](https://github.com/nataliebock/Bock-Data-Science-Portfolio/tree/main/MLUnsupervisedApp) of the K-Means Clustering visualization created using PCA for dimensionality reduction. In this example, the user selected 9 clusters**
 <img width="747" alt="Screenshot 2025-05-08 at 10 56 37 AM" src="https://github.com/user-attachments/assets/422cb641-e63b-4f1a-a220-525a5a9db8cc" />
 
 
