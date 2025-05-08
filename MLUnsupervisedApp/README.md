@@ -19,7 +19,7 @@ This script was written in Visual Studio code. The instructions below detail how
 **3.** Once these steps are completed, you will be able to run the code in your own VS code environment! 
 
 ### 🔗 Direct Link to the Deployed Version 
-To view the App without running the code, click ...ADD LINK....
+To view the App without running the code, click [HERE](https://unsupervisedmachinelearningappnkb.streamlit.app)
 
 ### 📚 Necessary Libraries and Versions 
 - **necessary libraries and packages:** Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, and Graphviz
@@ -44,7 +44,15 @@ from sklearn.cluster import AgglomerativeClustering
 - ***Note:*** Graphviz must also be Conda installed in Visual Studio code. For installation instructions, click [here](https://anaconda.org/conda-forge/python-graphviz)
 
 **Versions**
-
+````
+graphviz==0.20.3
+matplotlib==3.10.1
+numpy==2.2.4
+pandas==2.2.3
+scikit_learn==1.6.1
+seaborn==0.13.2
+streamlit==1.37.1
+````
   
 ## 📲 App Features  
 **The app features 3 model types: K-means Clustering, Hierarchical Clustering, and Principal Component Analysis (PCA). A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.**
