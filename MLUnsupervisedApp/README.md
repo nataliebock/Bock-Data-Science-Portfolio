@@ -59,17 +59,17 @@ from sklearn.cluster import AgglomerativeClustering
 ### Hierarchical Clustering
 - **Purpose:** Hierarchical clustering is also a type of clustering. This method is unique in that it creates a hierarchical tree of clusters, where more complicated clustering relationships can be seen. Hierarchical clustering also differs from K-means because there is no fixed k, meaning the data clusters can be of varying sizes. The tree can also be seen ***before*** determining the number of clusters, allowing for more informed analysis.
 
-**Choices for Dendrogram:** The interactive widgets created for altering the dendrogram are depicted and described below
+- **Choices for Dendrogram:** The interactive widgets created for altering the dendrogram are depicted and described below
 <img width="774" alt="Screenshot 2025-05-08 at 11 41 26 AM" src="https://github.com/user-attachments/assets/b142596f-fe9c-40f7-acfd-e151bd038da2" />
 
-- ***Linkage***: Linkage provides different ways to measure clusters before merging. Users are given the option of selecting one of the four linkage types described below:
+  - ***Linkage***: Linkage provides different ways to measure clusters before merging. Users are given the option of selecting one of the four linkage types described below:
      - *Complete:* When comparing two clusters, the complete linkage option will look for *maximum distance between two points, one in each cluster. The drawback for complete linkage is a strong influence of outliers since it relies on maximum distances.
      - *Average:* When comparing two clusters, the average linkage option will calculate the average for every pair of points in the clusters.
      - *Single:* When comparing two clusters, the single linkage option will look for minimum distance between two points, one in each cluster. Using single linkage may create a long cluster without clearly defined groups, a drawback that may be solved by using a different type of linkage.
      - *Ward:* When comparing two clusters, the ward linkage option has the goal of minimizing the increase in the total within cluster variance created by the merging of clusters.
        
-   - ***Label Selection***: Users can also pick the feature that is used to label the dendrogram.
-   - ***Truncation***: Users can choose to truncate the dendrogram, which will group things together at a higher level and create simpler dendrogram.
+- ***Label Selection***: Users can also pick the feature that is used to label the dendrogram.
+- ***Truncation***: Users can choose to truncate the dendrogram, which will group things together at a higher level and create simpler dendrogram.
 - **Clusters:** Users are then given the option to select a number of clusters between 1 and 10 to create a visualization of the clusters using PCA to reduce the number of dimensions *only for visualization.*
 
 **Evaluation:** To help the user evaluate what the optimal number of clusters is, a visualization is created showing the silhouette score.
@@ -77,8 +77,8 @@ from sklearn.cluster import AgglomerativeClustering
 
 ### Principal Component Analysis (PCA)
 - **Purpose:** PCA is a type of dimensionality reduction unsupervised learning model. Essentially PCA and dimensionality reduction broadly **reduces the number of columns, or features,** with the goal of simplifying the data without losing too much information. If you want to simplify your dimensions, this model will be helpful.
-
-**Scaled vs Unscaled**
+- **Number of Components**: Users are shown a sliding scale from 2 to 10 where they can select a number of components they would like to use.
+**Scaled vs Unscaled** 
 - For each model option, the user is given the choice between scaling the data, or leaving the data unscaled. Using unscaled data can make it difficult to compare features measured in different units. By scaling the data, it becomes easier to draw comparisons across the different features. Scaling for all three model types is important, with the reasoning being described in depth in the app.
 <img width="341" alt="Screenshot 2025-05-06 at 1 45 38 PM" src="https://github.com/user-attachments/assets/01dea17a-499b-451c-8839-9f11a22520b8" />
 
@@ -106,4 +106,7 @@ from sklearn.cluster import AgglomerativeClustering
 
 - **An example of a Dendrogram made using Hierarchical clustering. Here, the user selected the complete linkage option and chose to truncate.**
 <img width="760" alt="Screenshot 2025-05-08 at 12 02 04 PM" src="https://github.com/user-attachments/assets/3a976c3a-8a33-45f6-bb0e-8ea581eeb8bd" />
+
+- **An example of an explained variance visualization for PCA where the user selected 5 components**
+<img width="756" alt="Screenshot 2025-05-08 at 12 56 28 PM" src="https://github.com/user-attachments/assets/ee7bcefb-5422-4ffa-be47-74645fb19582" />
 
