@@ -62,10 +62,11 @@ from sklearn.cluster import AgglomerativeClustering
 
 ### Hierarchical Clustering
 - **Purpose:** Hierarchical clustering is also a type of clustering. This method is unique in that it creates a hierarchical tree of clusters, where more complicated clustering relationships can be seen. Hierarchical clustering also differs from K-means because there is no fixed k, meaning the data clusters can be of varying sizes. The tree can also be seen ***before*** determining the number of clusters, allowing for more informed analysis.
+
 **Choices for Dendrogram:** The interactive widgets created for altering the dendrogram are depicted and described below
 <img width="774" alt="Screenshot 2025-05-08 at 11 41 26 AM" src="https://github.com/user-attachments/assets/b142596f-fe9c-40f7-acfd-e151bd038da2" />
 
-   - ***Linkage***: Linkage provides different ways to measure clusters before merging. Users are given the option of selecting one of the four linkage types described below:
+- ***Linkage***: Linkage provides different ways to measure clusters before merging. Users are given the option of selecting one of the four linkage types described below:
      - *Complete:* When comparing two clusters, the complete linkage option will look for *maximum distance between two points, one in each cluster. The drawback for complete linkage is a strong influence of outliers since it relies on maximum distances.
      - *Average:* When comparing two clusters, the average linkage option will calculate the average for every pair of points in the clusters.
      - *Single:* When comparing two clusters, the single linkage option will look for minimum distance between two points, one in each cluster. Using single linkage may create a long cluster without clearly defined groups, a drawback that may be solved by using a different type of linkage.
@@ -73,6 +74,10 @@ from sklearn.cluster import AgglomerativeClustering
        
    - ***Label Selection***: Users can also pick the feature that is used to label the dendrogram.
    - ***Truncation***: Users can choose to truncate the dendrogram, which will group things together at a higher level and create simpler dendrogram.
+- **Clusters:** Users are then given the option to select a number of clusters between 1 and 10 to create a visualization of the clusters using PCA to reduce the number of dimensions *only for visualization.*
+
+**Evaluation:** To help the user evaluate what the optimal number of clusters is, a visualization is created showing the silhouette score.
+  - ***Silhouette Score:*** Evaluates the clustering results, with a ***higher score meaning a better clustering.*** This is accomplished by determining how well each point fits the assigned cluster in comparison to the others, and an average silhouette score of each k (number of clusters) is displayed.
 
 ### Principal Component Analysis (PCA)
 - **Purpose:** PCA is a type of dimensionality reduction unsupervised learning model. Essentially PCA and dimensionality reduction broadly **reduces the number of columns, or features,** with the goal of simplifying the data without losing too much information. If you want to simplify your dimensions, this model will be helpful.
