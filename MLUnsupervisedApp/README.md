@@ -88,11 +88,10 @@ streamlit==1.37.1
 - **Number of Components**: Users are shown a sliding scale from 2 to 10, where they can select a number of components they would like to use.
 - **Evaluation**: To evaluate the PCA, users are shown an explained variance plot that features individual and cumulative variance.
    - ***Cumulative***: The cumulative variance explains uses the elbow method to determine the ideal number of components. The elbow method evaluates by plotting the within-cluster sum of squares. In this case, the best number of clusters is identified by the elbow point, where the decrease in WCSS flattens, or diminishes.
-The bars below shows the individual variance explained, showing the variance that each separate component is able to explain. This is helpful for determining which components to use for further analysis.
    - ***Individual***: The individual variance explained shows the variance that each separate component is able to explain. This is helpful for determining which components to use for further analysis.
 ### Scaled vs Unscaled
 - For each model option, the user is given the choice between scaling the data, or leaving the data unscaled. Using unscaled data can make it difficult to compare features measured in different units. By scaling the data, it becomes easier to draw comparisons across the different features. Scaling for all three model types is important, with the reasoning being described in depth in the app. While scaling is strongly encouraged for each model, offering the choice can help users see *why* scaling is so important in most cases, and make the app work in a case where unscaled data is necessary. 
-  
+- The scaling option in the app is shown below: 
 <img width="341" alt="Screenshot 2025-05-06 at 1 45 38 PM" src="https://github.com/user-attachments/assets/01dea17a-499b-451c-8839-9f11a22520b8" />
 
 ## ℹ️ References 
