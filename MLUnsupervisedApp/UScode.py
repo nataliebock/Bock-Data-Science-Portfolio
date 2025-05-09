@@ -159,7 +159,7 @@ if df is not None:
                 plt.ylabel('Silhouette Score') #y axis label
                 plt.title('Silhouette Score for Optimal k') #plot title
                 plt.grid(True) #creating a grid 
-                plt.tight_layout() 
+                plt.tight_layout() #automatic adjustments to fit in the figure area 
                 st.pyplot(plt) #showing the plot in streamlit
 #creating the elbow method plot 
             else: 
@@ -211,6 +211,7 @@ if df is not None:
             cumulative = np.cumsum(explained) #the cumulative sum for the number defined in explained
             bar_color = 'purple' #setting the color
             ax1.bar(components, explained, color=bar_color, alpha=0.8, label='Individual Variance')  #creating the bars for individual variance 
+            ax1.set_xlabel('Principal Component') #labeling the x-axis underneath the bars 
             ax1.set_ylabel('Individual Variance Explained (%)', color=bar_color) #labeling the individual variance bar
             ax1.tick_params(axis='y', labelcolor=bar_color) 
             ax1.set_xticks(components)
@@ -220,7 +221,7 @@ if df is not None:
             line_color = 'green' #defining line color 
             ax2.plot(components, cumulative, color=line_color, marker='o', label='Cumulative Variance') #second y axis for cumulative variance 
             ax2.set_ylabel('Cumulative Variance Explained (%)', color=line_color) #setting y axis 
-            ax2.tick_params(axis='y', labelcolor=line_color)
+            ax2.tick_params(axis='y', labelcolor=line_color) #setting the axis and color of the axis text
             ax2.set_ylim(0, 100) #limiting y to 100 since shown as percentages out of 100 
             ax1.grid(False) #removing grid lines
             ax2.grid(False) #removing grid lines
@@ -228,14 +229,13 @@ if df is not None:
             lines2, labels2 = ax2.get_legend_handles_labels()# Combined legends
             ax1.legend(lines1 + lines2, labels1 + labels2, loc='best') #setting the legend to best location found, 
             plt.title('PCA: Variance Explained') #title for graph
-            plt.tight_layout()
-            st.pyplot(plt)
+            plt.tight_layout() #automatic adjustments to fit in the figure area 
+            st.pyplot(plt) #showing the plot 
 # Show Explained Variance Ratios numerically 
-            st.markdown("The boxes below show the exact numeric values of the explained variance and cumulative explained variance plotted in the visualization above.")
-            st.write("### Explained Variance") #title for explained variance section 
-            explained_variance = pca.explained_variance_ratio_
-            st.write("Explained Variance Ratio:", explained_variance)
-            st.write("Cumulative Explained Variance:", np.cumsum(explained_variance))
+            st.markdown("The boxes below show the exact numeric values of the explained variance and cumulative explained variance plotted in the visualization above.") #explaining the numbers shown below
+            explained_variance = pca.explained_variance_ratio_ #calculating explained variance 
+            st.write("Explained Variance Ratio:", explained_variance) #printing the explained variance 
+            st.write("Cumulative Explained Variance:", np.cumsum(explained_variance)) #printing the cumulative explained variance 
 
 ##Hierarchical clustering
         elif mlselect == "hierarchical clustering":
@@ -277,45 +277,45 @@ if df is not None:
             st.markdown("**Truncate:** Truncation will group things together at a higher level and create simpler dendrogram")
             trunc_opt = st.radio("**Truncate dendrogram**", ["Yes", "No"], index=0) #giving users the option to select whether to truncate the dendrogram 
             trun_yes = "lastp" if trunc_opt == "Yes" else None #making application of lastp condition on the user's answer to trunc_opt so if yes will apply, but if not, will not apply
-            plt.figure(figsize = (15,5))
+            plt.figure(figsize = (15,5)) #making figure size larger so able to show more of the dendrogram, usually very complex even after truncate 
             dendrogram(link_all, labels = label_choice_clean,
-                       truncate_mode = trun_yes) 
-            st.pyplot(plt)
-            st.subheader("Visualizing The Clusters")
+                       truncate_mode = trun_yes) #creating the dendrogram and making sure that user input translates by setting equal to the previous options for choice 
+            st.pyplot(plt) #showing the dendrogram 
+            st.subheader("Visualizing The Clusters") #clusters section 
             st.markdown("Now that you have visualized the initial dendrogram, select the number for k you would like to use")
             k = st.slider('**Number of clusters**', 1, 10, 3) #set k to some number of clusters chosen on slider and allowing users to select their own k
-            agg = AgglomerativeClustering(n_clusters = k, linkage = link_opt)
+            agg = AgglomerativeClustering(n_clusters = k, linkage = link_opt) #creating agg clustering by the number of clusters selected, and the linkage option chosen previously
             df["Cluster"] = agg.fit_predict(X_std) #will create cluster labels for us and putting it in a new column
             #df["Cluster"].value_counts() #each cluster associated with country
             cluster_labels = df["Cluster"] #create labels based on the clusters 
             st.markdown("- Below, PCA is used to visualize the data. Since the data has a large number of dimensions, PCA is used in order to reduce to 2D and allow for plotting. *PCA was not used for fitting the clusters*.")
             st.markdown("- ***Reminder:*** PCA, prinipal component analysis, is a dimension reduction technique so it simplifies the features, in this case down to 2 to allow for visualization.")
             st.markdown("- The axes show the two dimensions, with the x-axis representing the first component and the y-axis showing the second component.")
-            pca = PCA(n_components=2)
-            X_pca = pca.fit_transform(X_std)
-            plt.figure(figsize=(10, 7))
-            scatter = plt.scatter(X_pca[:, 0], X_pca[:, 1], c=cluster_labels, s=60, edgecolor='k', alpha=0.7, cmap = 'rainbow') #creating the plot using the same colors as the previous plots, labeling with cluster_labels. Using cmap to add a color scheme
-            plt.xlabel('Principal Component 1')
-            plt.ylabel('Principal Component 2')
+            pca = PCA(n_components=2) #creating the pca for making the graph only so setting n_compnents to 2 so 2 dimensional and easy to visualize 
+            X_pca = pca.fit_transform(X_std) #fitting the model 
+            plt.figure(figsize=(10, 7)) #making the figure size 
+            scatter = plt.scatter(X_pca[:, 0], X_pca[:, 1], c=cluster_labels, s=60, edgecolor='k', alpha=0.7, cmap = 'rainbow') #Using cmap to add a color scheme or rainbow for the created clusters
+            plt.xlabel('Principal Component 1') #x axis label
+            plt.ylabel('Principal Component 2') #y axis label 
             plt.title(f'Agglomerative Clustering on (via PCA)') #creating a title that will work with any dataset by putting the df title in 
-            plt.legend(*scatter.legend_elements(), title="Clusters")
+            plt.legend(*scatter.legend_elements(), title="Clusters") #creating the legend and legend title 
             plt.grid(True)
-            st.pyplot(plt)
+            st.pyplot(plt) #plotting 
 
 #sil score for hierarchical clustering
-            st.subheader("Determining the Optimal Number of K")
+            st.subheader("Determining the Optimal Number of K") #section explaining what sil score is 
             st.markdown("The visualization below can help determine the optimal number of clusters for the selected dataset.")
             st.markdown("- **Silhouette Score:** Evaluates the clustering results, with a ***higher score meaning a better clustering.*** This is accomplished by determining how well each point fits the assigned cluster in comparison to the others, and an average silhouette score of each k (number of clusters) is displayed.")
             ks = range(2,11) #looking at k = all these numbers in contained in the slider for K selection  2 - 10
-            silhouette_scores = []
+            silhouette_scores = [] 
             for k in ks: # Silhouette scores for ks 
                 labels = AgglomerativeClustering(n_clusters=k, linkage= link_opt).fit_predict(X_std) #using the same fit as with the dendrogram created 
                 silhouette_scores.append(silhouette_score(X_std, labels)) #looking at outside of cluster score for each point and labels, will grab scores
             #plotting
             plt.figure(figsize=(8,6))
-            plt.plot(ks, silhouette_scores, marker='o', color='purple')
-            plt.xlabel('Number of Clusters (k)')
-            plt.ylabel('Average Silhouette Score')
-            plt.title("Silhouette Analysis using Agglomerative Clustering")
+            plt.plot(ks, silhouette_scores, marker='o', color='purple') #selecting colors, applying ks from before 
+            plt.xlabel('Number of Clusters (k)') #x axis label
+            plt.ylabel('Average Silhouette Score') #y axis label 
+            plt.title("Silhouette Analysis using Agglomerative Clustering") #graph title 
             plt.grid(True)
-            st.pyplot(plt)
+            st.pyplot(plt) #plotting 
