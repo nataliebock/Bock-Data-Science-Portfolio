@@ -2,7 +2,7 @@
 ## Project Overview
 This Streamlit app encourages users to interact with different widgets in order to evaluate data with different unsupervised learning techniques (K-means Clustering, Hierarchical Clustering and Principal Component Analysis). The app features sample datasets, but also allows the user to upload their own CSV file. Users can use this app for exploratory data analysis, and can evaluate the model performances through different [metrics](#-App-Features).
 - **Project goal:** The goal of this project is to demonstrate an improved use of Streamlit, while also showing an understanding of unsupervised machine learning and the pros and cons of the 3 featured models. 
-- **Skills:** 
+- **Skills:** Python, Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Unsupervised Machine Learning, K-means, Hierarchical Clustering, and Principal Component Analysis
 ## 📖 Instructions 
 This script was written in Visual Studio code. The instructions below detail how to run the code using this platform.
 
@@ -19,7 +19,7 @@ This script was written in Visual Studio code. The instructions below detail how
 **3.** Once these steps are completed, you will be able to run the code in your own VS code environment! 
 
 ### 🔗 Direct Link to the Deployed Version 
-To view the App without running the code, click ...ADD LINK....
+To view the App without running the code, click [HERE](https://unsupervisedmachinelearningappnkb.streamlit.app)
 
 ### 📚 Necessary Libraries and Versions 
 - **necessary libraries and packages:** Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, and Graphviz
@@ -41,10 +41,18 @@ from sklearn.decomposition import PCA
 from scipy.cluster.hierarchy import linkage, dendrogram
 from sklearn.cluster import AgglomerativeClustering 
 ````
-- ***Note:*** Graphviz must also be Conda installed in Visual Studio code. For installation instructions, click [here](https://anaconda.org/conda-forge/python-graphviz)
 
 **Versions**
-
+Below are the listed versions of the packages and libraries used in this app:
+````
+graphviz==0.20.3
+matplotlib==3.10.1
+numpy==2.2.4
+pandas==2.2.3
+scikit_learn==1.6.1
+seaborn==0.13.2
+streamlit==1.37.1
+````
   
 ## 📲 App Features  
 **The app features 3 model types: K-means Clustering, Hierarchical Clustering, and Principal Component Analysis (PCA). A brief description of each is provided below, along with details about the hyperparameters and evaluation metrics available in the app.**
