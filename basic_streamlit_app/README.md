@@ -26,15 +26,17 @@ seaborn==0.13.2
 
 ## 📲 App Features
 - **Button:** A simple button in Streamlit to click to emphasize excitement for using the app and practice displaying text
+<img width="358" alt="Screenshot 2025-05-08 at 9 53 25 PM" src="https://github.com/user-attachments/assets/03f4ebd5-a7da-4250-b065-827125165444" />
+
 - **Species Selection:** Allows the user to select different species of penguins and islands of residence to study
+<img width="868" alt="Screenshot 2025-05-08 at 9 53 51 PM" src="https://github.com/user-attachments/assets/2af9ed27-082c-4356-913f-921db9d70f33" />
+
 - **Sliders:** Allows the user to subset the penguin species based on mass, flipper and bill length. The selected values are then used to create tables of the penguins that match the criteria, showing all the features in the dataset. 
-  
+  - The image below shows the body weight selection slider and the chart created of the penguins that match the criteria that is outputted
+  <img width="773" alt="Screenshot 2025-05-08 at 7 55 09 PM" src="https://github.com/user-attachments/assets/b4db7895-fedc-4a1e-a8a4-ddc0ecd999b3" />
 ## About the Data
 - This app uses a Seaborn dataset about different penguin species, where users can look at features like weight, flipper and bill length, and location.
-- To learn more about the dataset used, click [here](https://github.com/allisonhorst/palmerpenguins)
+- To learn more about the dataset used, click [here](https://github.com/allisonhorst/palmerpenguins) 
 
-## 📸 Visual Examples
-- **The image below shows the body weight selection slider and the chart created of the penguins that match the criteria that is outputted**
-<img width="773" alt="Screenshot 2025-05-08 at 7 55 09 PM" src="https://github.com/user-attachments/assets/b4db7895-fedc-4a1e-a8a4-ddc0ecd999b3" />
 
 
