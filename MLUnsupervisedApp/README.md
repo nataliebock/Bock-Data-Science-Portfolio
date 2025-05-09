@@ -1,5 +1,5 @@
 # Unsupervised Machine Learning App 
-## Project Overview
+## 📕 Project Overview
 This Streamlit app encourages users to interact with different widgets in order to evaluate data with different unsupervised learning techniques (K-means Clustering, Hierarchical Clustering and Principal Component Analysis). The app features sample datasets, but also allows the user to upload their own CSV file. Users can use this app for exploratory data analysis, and can evaluate the model performance through different [metrics](#-App-Features).
 - **Project goal:** The goal of this project is to demonstrate an improved use of Streamlit, while also showing an understanding of unsupervised machine learning and the pros and cons of the 3 featured models. 
 - **Skills:** Python, Streamlit, Pandas, Numpy, Seaborn, Matplotlib, Scikit Learn, Unsupervised Machine Learning, K-means, Hierarchical Clustering, and Principal Component Analysis
