@@ -253,6 +253,7 @@ if df is not None:
         ##initial dendrogram
         #dendrogram widgets 
             st.subheader("Creating the Dendrogram")
+            st.markdown("The dendrogram below helps to show how the data has been clustered. This visual can be helpful for determining what the ideal number of clusters is for the data.") #adding a brief explanation of what a dendrogram is 
             st.markdown("Below you can interact with 3 different widgets to determine what kind of linkage you would like to use, the feature you want to label the dendrogram, and whether or not you would like to truncate the dendrogram.") #general explanation of what can be done with the widgets
             st.markdown("**Linkage:** The different types of linkage offered below are different ways to measure clusters before merging:")
             st.markdown("- **Complete:** When comparing two clusters, the complete linkage option will look for ***maximum distance** between two points, one in each cluster. The drawback for complete linkage is a strong influence of outliers since it relies on maximum distances.")
