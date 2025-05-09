@@ -1,7 +1,7 @@
 # Tidy Data Project 
 ## 🧑‍🏫Project Overview  
 **This project, I tidied and used a dataset on the 2008 Summer Olympics. The source where the untidy data was adapted from is linked below under References.**
-- **Project goal:** The goal of this project was to demonstrat the ability to clean an untidy dataset using the principles of tidy data and begin to analyze the data through exploratory data analysis and data visualization. 
+- **Project goal:** The goal of this project is to demonstrate the ability to clean an untidy dataset using the principles of tidy data and begin to analyze the data through exploratory data analysis and data visualization. 
 - **Skills:** Python, Pandas, Numpy, Seaborn, data cleaning, and data visualization.
 
 ### 🧹Tidy Data  
@@ -38,6 +38,16 @@ import matplotlib.pyplot as plt
 - After cleaning, the variables included are the names of the competitor, their gender, the event they competed in, and the type of medal they won.
 - The data comes from a dataset by Giorgio Comai (OBCT/CCI) for EDJNet, linked below. In the original data, country is also included as a variable, as well as a medal count per person. In this case, these variables were not included, showing that in this dataset the type of medal that was won in 2008 is what's important, rather than how many they have won over time.
 
+## ℹ️ References 
+[Data Source](https://edjnet.github.io/OlympicsGoNUTS/2008/)
+
+[Tidy Data by Hadley Wickham](https://vita.had.co.nz/papers/tidy-data.pdf)
+
+[Data Cleaning Reference Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+
+[Information about the Summer 2008 Olympics ](https://www.olympics.com/en/olympic-games/beijing-2008/results)
+
+
 ## 📷 Visuals 
 Below, I have included 2 visualizations made for this project, as well as a brief explanation and analysis of what is being depicted. To visualize the data, I divided the events into three categories: land events with no ball, land events with a ball, and water events. Below, are the visualizations created for the water events.  
 
@@ -63,16 +73,9 @@ Below, I have included 2 visualizations made for this project, as well as a brie
   
 - The event with the most male medalists is rowing, while the event with the most female medalists is swimming.
 
-#### If you are interested in viewing the bar charts for the other subsets of the events, follow the previous instructions to load the code and view the visualizations. 
+**If you are interested in viewing the bar charts for the other subsets of the events, follow the previous instructions to load the code and view the visualizations.**
   
 
 
-## ℹ️ References 
-[Data Source](https://edjnet.github.io/OlympicsGoNUTS/2008/)
 
-[Tidy Data by Hadley Wickham](https://vita.had.co.nz/papers/tidy-data.pdf)
-
-[Data Cleaning Reference Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
-
-[Information about the Summer 2008 Olympics ](https://www.olympics.com/en/olympic-games/beijing-2008/results)
 
