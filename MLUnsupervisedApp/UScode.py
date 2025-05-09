@@ -23,7 +23,6 @@ st.subheader("Welcome to this Unsupervised Machine Learning App!")
 st.markdown("**Getting started:** Select a sample dataset or upload your own CSV on the left side panel. You will then be shown a preview of the data, and can begin making choices about what type of model you would like to use. Some metrics for evaluation are shown, as well as some brief explanations of what different metrics show. For a more in depth understanding, you can view the reading materials linked on the connected Github README file.")
 st.markdown("**What is Unusupervised Machine Learning?** Machine Unsupervised learning uses unlabeled data consisting only of features. It is used for purposes including exploratory data analysis and preprocessing data. Two categories of unsupervised learning will be presented here: dimensionality reduction (PCA) and clustering (hierarchical and k-means).")
 
-
 ##Data
 #Uploading user dataset code
 st.sidebar.header("Upload or Choose a Dataset") #adding it to the sidebar
@@ -73,14 +72,14 @@ elif sam_data == "Penguins":
 if df is not None:
     st.write("**Preview of Dataset**", df.head()) #show a preview of df selected 
 
-    #Selecting features here, also giving option to select a "target column"/ label column if want to compare the clusters with label column
+#Selecting features here
     sel_col = None #since unsupervised learning as no target column since unlabeled, setting this to None 
     features = st.multiselect("**Select the features you would like to use:**", options=[col for col in df.columns if col != sel_col]) #allowing users to select multiple feature columns, besides the sel_col / the target column previously selected 
     if features:
         X = df[features] #defining X 
         y = None #since no target column for unsupervised learning
 
-    #Model options 
+#Model options 
     #providing brief descriptions of the 3 models offered
         st.header("Selecting a Model")
         st.markdown("**Choose which unsupervised machine learning model you would like to use. Below is a brief explanation of each model:**")
@@ -194,8 +193,6 @@ if df is not None:
                 X_std = scaler.fit_transform(X) ##since the clustering is based on how close they are to centroid, need to make sure to scale so all in same unit. Standard scaling looks at means across, and then does standard deviation by comparing against the mean 
             else:
                 X_std = X.values #if unscaled, will define X_std as the unscaled x values so still works with rest of code 
-            #kmeans.fit_predict(X_std) #finds the centroids and then clusters
-            #clusters = kmeans.fit_predict(X_std)
             pca = PCA(n_components= com_choice) #having the number of components for PCA reflect user choice from the slider defined as com_choice 
             X_pca = pca.fit_transform(X_std) #fitting the model 
 #Explained variance combined plot
@@ -250,7 +247,7 @@ if df is not None:
                 X_std = scaler.fit_transform(X) ##since the clustering is based on how close they are to centroid, need to make sure to scale so all in same unit. Standard scaling looks at means across, and then does standard deviation by comparing against the mean 
             else:
                 X_std = X.values #if unscaled, will define X_std as the unscaled x values so still works with rest of code 
-        ##initial dendrogram
+        ##dendrogram
         #dendrogram widgets 
             st.subheader("Creating the Dendrogram")
             st.markdown("The dendrogram below helps to show how the data has been clustered. This visual can be helpful for determining what the ideal number of clusters is for the data.") #adding a brief explanation of what a dendrogram is 
@@ -287,7 +284,6 @@ if df is not None:
             k = st.slider('**Number of clusters**', 1, 10, 3) #set k to some number of clusters chosen on slider and allowing users to select their own k
             agg = AgglomerativeClustering(n_clusters = k, linkage = link_opt) #creating agg clustering by the number of clusters selected, and the linkage option chosen previously
             df["Cluster"] = agg.fit_predict(X_std) #will create cluster labels for us and putting it in a new column
-            #df["Cluster"].value_counts() #each cluster associated with country
             cluster_labels = df["Cluster"] #create labels based on the clusters 
             st.markdown("- The scatterplot below shows how the model has clustered the data. Below, PCA is used to visualize the data. Since the data has a large number of dimensions, PCA is used in order to reduce to 2D and allow for plotting. *PCA was not used for fitting the clusters*.")
             st.markdown("- ***Reminder:*** PCA, prinipal component analysis, is a dimension reduction technique so it simplifies the features, in this case down to 2 to allow for visualization.")
