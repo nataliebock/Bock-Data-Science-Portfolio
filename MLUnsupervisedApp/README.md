@@ -103,6 +103,8 @@ The bars below shows the individual variance explained, showing the variance tha
 [Learn About PCA](https://www.turing.com/kb/guide-to-principal-component-analysis#what-is-pca?)
 [Learn About Hierarchical Clustering](https://www.datacamp.com/tutorial/introduction-hierarchical-clustering-python)
 [Hierarchical Clustering, especially linkage](https://r.qcbs.ca/workshop09/book-en/clustering.html)
+[Grokking Machine Learning Chapter 2 for Unsupervised](https://www.manning.com/books/grokking-machine-learning)
+
 
 **Learn More About the Sample Datasets**
 [Penguins Sample Dataset](https://github.com/allisonhorst/palmerpenguins)
