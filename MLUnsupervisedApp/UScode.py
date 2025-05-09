@@ -289,7 +289,7 @@ if df is not None:
             df["Cluster"] = agg.fit_predict(X_std) #will create cluster labels for us and putting it in a new column
             #df["Cluster"].value_counts() #each cluster associated with country
             cluster_labels = df["Cluster"] #create labels based on the clusters 
-            st.markdown("- Below, PCA is used to visualize the data. Since the data has a large number of dimensions, PCA is used in order to reduce to 2D and allow for plotting. *PCA was not used for fitting the clusters*.")
+            st.markdown("- The scatterplot below shows how the model has clustered the data. Below, PCA is used to visualize the data. Since the data has a large number of dimensions, PCA is used in order to reduce to 2D and allow for plotting. *PCA was not used for fitting the clusters*.")
             st.markdown("- ***Reminder:*** PCA, prinipal component analysis, is a dimension reduction technique so it simplifies the features, in this case down to 2 to allow for visualization.")
             st.markdown("- The axes show the two dimensions, with the x-axis representing the first component and the y-axis showing the second component.")
             pca = PCA(n_components=2) #creating the pca for making the graph only so setting n_compnents to 2 so 2 dimensional and easy to visualize 
