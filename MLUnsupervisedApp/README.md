@@ -121,7 +121,7 @@ streamlit==1.37.1
 - **An example of a Dendrogram made using Hierarchical clustering. Here, the user selected the complete linkage option and chose to truncate.**
 <img width="760" alt="Screenshot 2025-05-08 at 12 02 04 PM" src="https://github.com/user-attachments/assets/3a976c3a-8a33-45f6-bb0e-8ea581eeb8bd" />
 
-- **An example of an explained variance visualization for PCA where the user selected 5 components**
+- **An example of an explained variance visualization for PCA where the user selected 3 components**
 <img width="730" alt="Screenshot 2025-05-08 at 11 03 13 PM" src="https://github.com/user-attachments/assets/db2be85c-6ced-4273-a2dc-5080ad7fd3b6" />
 
 
