@@ -32,19 +32,19 @@ sam_data = st.sidebar.selectbox("Or choose a sample dataset", ["None", "Breast C
 
 # Loading sample datasets and creating the options for datasets. First, if user uploads dataset, then breast cancer dataset, Iris dataset, Titanic dataset, and finally penguins
 df = None
-if uploaded_file:
+if uploaded_file: 
     df = pd.read_csv(uploaded_file) #If own dataset uploaded load this
     df = pd.get_dummies(df, columns= df.select_dtypes(exclude=['number']).columns.tolist(), drop_first=True) #changing categorical columns into dummy, pd.get_dummies converts categorical variables into dummy variables so have numeric variables, use drop_first to avoid dummy trap. Using exclude=['number'] so only applies to non-numeric columns and makes them into dummies. 
-    df.dropna(inplace=True) #dropping the na values for uploaded datasets 
+    df= df.fillna(df.median())#dropping the na values for uploaded datasets dropped too many when just dropping all rows with any missing data. So I decided to impute the median value instead 
     dfname = "Your Dataset"
 elif sam_data == "Breast Cancer":
     breast_cancer = load_breast_cancer() 
-    X = breast_cancer.data #making sure this data is loaded in properly as a dataset 
+    X = breast_cancer.data #making sure this data is loaded in properly as a dataset by setting X as a feature matrix
     y = breast_cancer.target #while NO target is used, decided to use this lingo for setting up the dataframe 
     feature_names = breast_cancer.feature_names
     target_names = breast_cancer.target_names
     df = pd.DataFrame(X, columns=feature_names) #making dataframe 
-    df['target'] = y  #making sure there is a target variable in the df is chosen
+    df['target'] = y  #creating a 'target' column in the dataset
     dfname = "Breast Cancer" #if Breask cancer selected load this
     st.sidebar.markdown("**About Breast Cancer Dataset:** Contains information about Breast Cancer in Wisconsin, specifically the characteristics of tumors.") #adding brief info about data
     st.sidebar.markdown("For more information click [here](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html)") #adding hyperlink to more information about dataset
